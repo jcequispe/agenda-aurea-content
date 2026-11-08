@@ -15,7 +15,7 @@ whatsapp:
   number: "51900000000"          # PENDIENTE: número real, solo dígitos con código de país
   orderMessage: "Hola, quiero pedir {qty} {product}"   # {qty} y {product} los completa la app
 
-topBanner: PRUEBA DE CONTENIDO REMOTO
+topBanner: Envío gratis en Lima hasta el 10/11
 
 hero:
   image: imperfecta/hero/hero.jpg
