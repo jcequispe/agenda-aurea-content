@@ -25,7 +25,9 @@
     "ui",
     "footer",
     "nav",
-    "cart"
+    "cart",
+    "demo",
+    "finder"
   ],
   "definitions": {
     "media": {
@@ -252,6 +254,12 @@
           },
           "image": {
             "$ref": "#/definitions/media"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           }
         }
       }
@@ -408,6 +416,9 @@
               }
             }
           }
+        },
+        "verified": {
+          "type": "boolean"
         }
       }
     },
@@ -725,6 +736,109 @@
       ],
       "additionalProperties": {
         "type": "string"
+      }
+    },
+    "demo": {
+      "type": "object",
+      "required": [
+        "title",
+        "days",
+        "daysLong",
+        "states",
+        "habits",
+        "messages",
+        "cta"
+      ],
+      "properties": {
+        "days": {
+          "type": "array",
+          "minItems": 7,
+          "maxItems": 7,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "daysLong": {
+          "type": "array",
+          "minItems": 7,
+          "maxItems": 7,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "habits": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "messages": {
+          "type": "object",
+          "required": [
+            "zero",
+            "some",
+            "most",
+            "all"
+          ]
+        },
+        "states": {
+          "type": "object",
+          "required": [
+            "empty",
+            "done",
+            "rest"
+          ]
+        }
+      }
+    },
+    "finder": {
+      "type": "object",
+      "required": [
+        "title",
+        "questions",
+        "resultCta"
+      ],
+      "properties": {
+        "questions": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "q",
+              "options"
+            ],
+            "properties": {
+              "options": {
+                "type": "array",
+                "minItems": 2,
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "label",
+                    "tags"
+                  ],
+                  "properties": {
+                    "label": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "tags": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
