@@ -1,0 +1,192 @@
+# yaml-language-server: $schema=../../schema/conversion.schema.json
+#
+# Landing #4 — Imperfecta optimizada para conversión (CRO + psicología + UX).
+# Reutiliza la media de imperfecta/. Todo lo marcado PENDIENTE es placeholder:
+# NO inventar cifras, reseñas ni garantías que el negocio no pueda cumplir.
+
+version: 1
+site: conversion
+
+brand:
+  wordmark: Áurea
+  email: hola@agendaaurea.com
+
+whatsapp:
+  number: "51900000000"          # PENDIENTE: número real
+  orderMessage: "Hola, quiero pedir {qty} {product}"
+
+topBanner: Envío gratis en Lima hasta el 10/11
+
+hero:
+  eyebrow: AGENDA ÁUREA 2027 · PREVENTA
+  title: Tu año en orden,
+  titleAccent: sin culpa por los días en blanco.
+  sub: Una agenda que se adapta a tu semana, no al revés. Diez portadas, hojas que resisten el año entero y un espacio para mirar atrás cada domingo.
+  image: imperfecta/hero/hero.jpg
+  ctaPrimary: Elegir mi portada
+  ctaSecondary: Ver cómo es por dentro
+  assurances:
+    - Paga con Yape o tarjeta
+    - Envíos a todo el Perú
+    - Cambia de portada hasta el despacho
+
+problem:
+  eyebrow: ¿TE SUENA?
+  title: La mayoría de agendas se abandona en febrero.
+  body: No es falta de disciplina. Es que te piden llenar cada casilla, todos los días, y un solo día en blanco ya se siente como un fracaso.
+  points:
+    - Empiezas con ganas y a las tres semanas ya no la abres.
+    - Cada espacio vacío te recuerda lo que no hiciste.
+    - Terminas anotando en el celular y la agenda se queda en el cajón.
+
+benefits:
+  eyebrow: POR ESO LA HICIMOS DISTINTA
+  title: Una agenda que sí vas a usar.
+  items:
+    - title: Tu año, en una sola vista
+      body: Objetivos del mes, lo que entra y lo que sale, todo en una página. Sin cambiar de app.
+      image: imperfecta/features/feature-1.jpg
+    - title: Lo que repites, a la vista
+      body: Una cuadrícula para marcar lo que ya hiciste, no otra lista de lo que te falta.
+      image: imperfecta/features/feature-2.jpg
+    - title: Un espacio para mirar atrás
+      body: Tres preguntas al cierre de cada semana para ajustar la siguiente sin empezar de cero.
+      image: imperfecta/features/feature-3.jpg
+
+editionsSection:
+  eyebrow: HAZLA TUYA
+  title: Elige la portada que te represente.
+  sub: Diez colores. Eliges portada y formato de cada una, y puedes mezclarlas.
+  cta: Quiero la {label}
+
+editions:
+  - { id: oro,       label: Oro,       color: "#c9942f", image: imperfecta/editions/oro.jpg }
+  - { id: terracota, label: Terracota, color: "#b5653f", image: imperfecta/editions/terracota.jpg }
+  - { id: noche,     label: Noche,     color: "#1c2b3a", image: imperfecta/editions/noche.jpg }
+  - { id: jardin,    label: Jardín,    color: "#4c6b4f", image: imperfecta/editions/jardin.jpg }
+  - { id: blush,     label: Blush,     color: "#d9a7a0", image: imperfecta/editions/blush.jpg }
+  - { id: menta,     label: Menta,     color: "#9ec6b0", image: imperfecta/editions/menta.jpg }
+  - { id: arena,     label: Arena,     color: "#cdb78f", image: imperfecta/editions/arena.jpg }
+  - { id: vino,      label: Vino,      color: "#6b3340", image: imperfecta/editions/vino.jpg }
+  - { id: cielo,     label: Cielo,     color: "#7fa0c2", image: imperfecta/editions/cielo.jpg }
+  - { id: bosque,    label: Bosque,    color: "#2f4a3a", image: imperfecta/editions/bosque.jpg }
+
+formats:
+  eyebrow: FORMATO
+  title: Semanal o diaria, al mismo precio.
+  body: La diferencia es cuánto espacio quieres por día, no cuánto pagas.
+  image: imperfecta/product/format.jpg
+  items:
+    - { id: semanal, name: Semanal, detail: una semana por doble página }
+    - { id: diaria,  name: Diaria,  detail: un día por página }
+
+details:
+  eyebrow: HECHA PARA DURAR
+  title: Cada detalle pensado para el año entero.
+  image: imperfecta/collage/collage-1.jpg
+  materials:
+    - { label: Tapa dura,              detail: resiste la mochila sin doblarse }
+    - { label: Anillo doble,           detail: abre completamente plana }
+    - { label: Esquineros metálicos,   detail: para que no se gasten las puntas }
+    - { label: Liga de cierre,         detail: para que no se abra sola en la mochila }
+    - { label: Cinta separadora doble, detail: hoy y lo que viene }
+    - { label: Bolsillo interior,      detail: para tarjetas y notas sueltas }
+  size: A5 · cerrada mide 17,6 × 21,5 cm · Semanal 620 g · Diaria 820 g
+
+proof:                           # PENDIENTE: cifra y testimonios reales
+  eyebrow: LO QUE DICEN
+  title: Compradoras de ediciones anteriores
+  stat: "[cifra pendiente]"
+  statText: mujeres ya organizan su año con Áurea
+  testimonials:
+    - quote: La compré sin muchas expectativas y terminó siendo lo único que no abandoné en todo el año. Las hojas resisten hasta el café derramado.
+      name: Valeria C.
+      place: Lima
+      tag: Terracota · 2026
+    - quote: Dejé de sentir culpa por no llenar cada casilla. Esta agenda se adapta a mi semana, no al revés.
+      name: Daniela R.
+      place: Arequipa
+      tag: Oro · 2025
+    - quote: El anillado abre completamente plano, puedo escribir hasta en el bus sin que se cierre sola.
+      name: Fiorella M.
+      place: Trujillo
+      tag: Bosque · 2026
+
+steps:
+  eyebrow: ASÍ DE FÁCIL
+  title: De tu pedido a tu escritorio en 3 pasos.
+  items:
+    - title: Eliges
+      body: Portada, formato y cuántas te llevas.
+    - title: Pagas
+      body: Con Yape o tarjeta. Te escribimos por WhatsApp para confirmar.
+    - title: Recibes
+      body: Llega en su caja de regalo, con seguimiento desde el despacho.
+
+pricing:                         # PENDIENTE: precios y fecha reales
+  currency: S/
+  eyebrow: TU PEDIDO
+  title: ¿Cuántas te llevas?
+  highlightQty: 2
+  productOne: Agenda Áurea
+  productMany: Agendas Áurea
+  unitOne: agenda
+  unitMany: agendas
+  perUnitLabel: Cada una te sale en
+  buyLabel: Pedir por WhatsApp
+  deadline: "2026-11-10T23:59:00-05:00"   # fin del regalo de preventa; pasada la fecha la cuenta regresiva se oculta
+  deadlineLabel: El regalo de preventa termina en
+  tiers:
+    - { qty: 1, total: 95,  note: Para empezar }
+    - { qty: 2, total: 180, perUnit: 90, note: Ideal para regalar }
+    - { qty: 3, total: 255, perUnit: 85, note: Mejor precio por agenda }
+  mixNote: Eliges portada y formato de cada una · puedes mezclarlas.
+  payNote: Pagas con Yape o tarjeta.
+
+gift:                            # PENDIENTE: valor y vigencia del regalo
+  tag: DE REGALO EN PREVENTA
+  title: Un organizador de escritorio 2027 por cada agenda.
+  note: Se vende por separado a S/ [xx]
+  image: imperfecta/product/gift-bonus.jpg
+
+unboxing:
+  title: Llega lista para abrir o para regalar.
+  body: Cada agenda viaja en su propia caja de regalo.
+  image: imperfecta/product/unboxing.jpg
+
+guarantee:                       # PENDIENTE: confirmar la política antes de publicar
+  title: Cambias de opinión sin problema.
+  body: Puedes cambiar el formato o la portada mientras no hayamos empezado tu envío. Escríbenos y lo ajustamos.
+
+faq:
+  - q: ¿Cuándo llega?
+    a: "Es preventa: pagas hoy y los envíos empiezan el [fecha]. Apenas despachemos la tuya, te mandamos el seguimiento."
+  - q: ¿Por qué hacen preventa?
+    a: Así imprimimos exactamente lo que se vende, sin stock de más que termine rematado ni faltante que te deje esperando.
+  - q: ¿La diaria cuesta más?
+    a: No. Mismo precio, elijas semanal o diaria.
+  - q: ¿Cómo coordinan la entrega?
+    a: Te escribimos por WhatsApp para confirmar dirección y la mejor fecha, en Lima y para el resto del país.
+  - q: ¿Puedo cambiar el formato o la portada después de pagar?
+    a: Sí, mientras no hayamos empezado tu envío. Escríbenos y lo ajustamos.
+
+finalCta:
+  title: No busques el momento perfecto. Créalo tú.
+  sub: Elige tu portada y empieza 2027 con un plan que sí vas a abrir.
+  cta: Elegir mi portada
+
+ui:
+  navCta: Pedir
+  stickyCta: Elegir mi portada
+  faqEyebrow: DUDAS
+  faqTitle: Lo que nos preguntan
+  faqSub: Si no está aquí, escríbenos. Contestamos nosotras, no un robot.
+  daysShort: d
+  hoursShort: h
+  minutesShort: min
+  whatsappCta: ¿Dudas? Escríbenos por WhatsApp
+
+footer:
+  links: [Términos y condiciones, Privacidad, Promociones]
+  legal: Razón social pendiente · RUC pendiente
+  address: Dirección pendiente
