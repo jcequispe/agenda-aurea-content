@@ -4,10 +4,15 @@ import yaml from 'js-yaml'
 import Ajv from 'ajv'
 import addFormats from 'ajv-formats'
 
-const schema = JSON.parse(readFileSync('schema/content.schema.json', 'utf8'))
 const ajv = new Ajv({ allErrors: true })
 addFormats(ajv)
-const validate = ajv.compile(schema)
+const compiled = new Map()
+function validatorFor(site) {
+  const own = `schema/${site}.schema.json`
+  const path = existsSync(own) ? own : 'schema/content.schema.json'
+  if (!compiled.has(path)) compiled.set(path, ajv.compile(JSON.parse(readFileSync(path, 'utf8'))))
+  return compiled.get(path)
+}
 
 const MAX_BYTES = { image: 600 * 1024, video: 15 * 1024 * 1024 }
 const isVideo = (p) => /\.(mp4|webm)$/.test(p)
@@ -26,6 +31,7 @@ for (const site of readdirSync('sites')) {
   const file = join('sites', site, 'content.yml')
   if (!existsSync(file)) continue
   const data = yaml.load(readFileSync(file, 'utf8'))
+  const validate = validatorFor(site)
   if (!validate(data)) {
     for (const e of validate.errors) fail(`${file} ${e.instancePath || '/'} ${e.message}`)
     continue

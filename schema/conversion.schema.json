@@ -1,0 +1,662 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Landing conversion",
+  "type": "object",
+  "required": [
+    "version",
+    "site",
+    "brand",
+    "whatsapp",
+    "hero",
+    "problem",
+    "benefits",
+    "editionsSection",
+    "editions",
+    "formats",
+    "details",
+    "proof",
+    "steps",
+    "pricing",
+    "gift",
+    "unboxing",
+    "guarantee",
+    "faq",
+    "finalCta",
+    "ui",
+    "footer"
+  ],
+  "definitions": {
+    "media": {
+      "type": "string",
+      "pattern": "^[a-z0-9_\\-/]+\\.(jpg|jpeg|png|webp|avif|svg|mp4|webm)$"
+    }
+  },
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "site": {
+      "const": "conversion"
+    },
+    "brand": {
+      "type": "object",
+      "required": [
+        "wordmark",
+        "email"
+      ],
+      "properties": {
+        "wordmark": {
+          "type": "string",
+          "minLength": 1
+        },
+        "email": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "whatsapp": {
+      "type": "object",
+      "required": [
+        "number",
+        "orderMessage"
+      ],
+      "properties": {
+        "number": {
+          "type": "string",
+          "pattern": "^[0-9]{8,15}$"
+        },
+        "orderMessage": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "hero": {
+      "type": "object",
+      "required": [
+        "eyebrow",
+        "title",
+        "titleAccent",
+        "sub",
+        "image",
+        "ctaPrimary",
+        "ctaSecondary",
+        "assurances"
+      ],
+      "properties": {
+        "image": {
+          "$ref": "#/definitions/media"
+        },
+        "assurances": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "eyebrow": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "titleAccent": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sub": {
+          "type": "string",
+          "minLength": 1
+        },
+        "ctaPrimary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "ctaSecondary": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "problem": {
+      "type": "object",
+      "required": [
+        "eyebrow",
+        "title",
+        "body",
+        "points"
+      ],
+      "properties": {
+        "eyebrow": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "body": {
+          "type": "string",
+          "minLength": 1
+        },
+        "points": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "benefits": {
+      "type": "object",
+      "required": [
+        "eyebrow",
+        "title",
+        "items"
+      ],
+      "properties": {
+        "eyebrow": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "items": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "title",
+              "body",
+              "image"
+            ],
+            "properties": {
+              "title": {
+                "type": "string",
+                "minLength": 1
+              },
+              "body": {
+                "type": "string",
+                "minLength": 1
+              },
+              "image": {
+                "$ref": "#/definitions/media"
+              }
+            }
+          }
+        }
+      }
+    },
+    "editionsSection": {
+      "type": "object",
+      "required": [
+        "eyebrow",
+        "title",
+        "sub",
+        "cta"
+      ],
+      "properties": {
+        "eyebrow": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sub": {
+          "type": "string",
+          "minLength": 1
+        },
+        "cta": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "editions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "label",
+          "color",
+          "image"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9\\-]+$"
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "color": {
+            "type": "string",
+            "pattern": "^#[0-9a-fA-F]{6}$"
+          },
+          "image": {
+            "$ref": "#/definitions/media"
+          }
+        }
+      }
+    },
+    "formats": {
+      "type": "object",
+      "required": [
+        "eyebrow",
+        "title",
+        "body",
+        "image",
+        "items"
+      ],
+      "properties": {
+        "eyebrow": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "body": {
+          "type": "string",
+          "minLength": 1
+        },
+        "image": {
+          "$ref": "#/definitions/media"
+        },
+        "items": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "name",
+              "detail"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "detail": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "details": {
+      "type": "object",
+      "required": [
+        "eyebrow",
+        "title",
+        "image",
+        "materials",
+        "size"
+      ],
+      "properties": {
+        "eyebrow": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "image": {
+          "$ref": "#/definitions/media"
+        },
+        "size": {
+          "type": "string",
+          "minLength": 1
+        },
+        "materials": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "label",
+              "detail"
+            ],
+            "properties": {
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "detail": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "proof": {
+      "type": "object",
+      "required": [
+        "eyebrow",
+        "title",
+        "stat",
+        "statText",
+        "testimonials"
+      ],
+      "properties": {
+        "eyebrow": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "stat": {
+          "type": "string",
+          "minLength": 1
+        },
+        "statText": {
+          "type": "string",
+          "minLength": 1
+        },
+        "testimonials": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "quote",
+              "name"
+            ],
+            "properties": {
+              "quote": {
+                "type": "string",
+                "minLength": 1
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "place": {
+                "type": "string"
+              },
+              "tag": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "steps": {
+      "type": "object",
+      "required": [
+        "eyebrow",
+        "title",
+        "items"
+      ],
+      "properties": {
+        "eyebrow": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "items": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "title",
+              "body"
+            ],
+            "properties": {
+              "title": {
+                "type": "string",
+                "minLength": 1
+              },
+              "body": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "pricing": {
+      "type": "object",
+      "required": [
+        "currency",
+        "eyebrow",
+        "title",
+        "highlightQty",
+        "productOne",
+        "productMany",
+        "unitOne",
+        "unitMany",
+        "perUnitLabel",
+        "buyLabel",
+        "tiers",
+        "mixNote",
+        "payNote"
+      ],
+      "properties": {
+        "currency": {
+          "type": "string",
+          "minLength": 1
+        },
+        "highlightQty": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "deadline": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "deadlineLabel": {
+          "type": "string"
+        },
+        "tiers": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "qty",
+              "total"
+            ],
+            "properties": {
+              "qty": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "total": {
+                "type": "number",
+                "minimum": 0
+              },
+              "perUnit": {
+                "type": "number",
+                "minimum": 0
+              },
+              "note": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "gift": {
+      "type": "object",
+      "required": [
+        "tag",
+        "title",
+        "note",
+        "image"
+      ],
+      "properties": {
+        "tag": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1
+        },
+        "image": {
+          "$ref": "#/definitions/media"
+        }
+      }
+    },
+    "unboxing": {
+      "type": "object",
+      "required": [
+        "title",
+        "body",
+        "image"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "body": {
+          "type": "string",
+          "minLength": 1
+        },
+        "image": {
+          "$ref": "#/definitions/media"
+        }
+      }
+    },
+    "guarantee": {
+      "type": "object",
+      "required": [
+        "title",
+        "body"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "body": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "faq": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "q",
+          "a"
+        ],
+        "properties": {
+          "q": {
+            "type": "string",
+            "minLength": 1
+          },
+          "a": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "finalCta": {
+      "type": "object",
+      "required": [
+        "title",
+        "sub",
+        "cta"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sub": {
+          "type": "string",
+          "minLength": 1
+        },
+        "cta": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "ui": {
+      "type": "object",
+      "required": [
+        "navCta",
+        "stickyCta",
+        "faqEyebrow",
+        "faqTitle",
+        "faqSub",
+        "daysShort",
+        "hoursShort",
+        "minutesShort",
+        "whatsappCta"
+      ],
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "footer": {
+      "type": "object",
+      "required": [
+        "links",
+        "legal",
+        "address"
+      ],
+      "properties": {
+        "links": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "legal": {
+          "type": "string",
+          "minLength": 1
+        },
+        "address": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}
