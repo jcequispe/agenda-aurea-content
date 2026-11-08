@@ -13,9 +13,15 @@ brand:
 
 whatsapp:
   number: "51900000000"          # PENDIENTE: número real
-  orderMessage: "Hola, quiero pedir {qty} {product}. Portada: {edition}. Formato: {format}."
 
 topBanner: Envío gratis en Lima hasta el 10/11
+
+nav:
+  links:
+    - { label: Portadas,  href: "#elige" }
+    - { label: Detalles,  href: "#detalles" }
+    - { label: Precios,   href: "#pedido" }
+    - { label: Preguntas, href: "#preguntas" }
 
 hero:
   eyebrow: AGENDA ÁUREA 2027 · PREVENTA
@@ -25,6 +31,7 @@ hero:
   image: imperfecta/hero/hero.jpg
   ctaPrimary: Elegir mi portada
   ctaSecondary: Ver cómo es por dentro
+  chips: [Tapa dura, Anillo doble, Formato A5, 10 portadas]
   assurances:
     - Paga con Yape o tarjeta
     - Envíos a todo el Perú
@@ -127,7 +134,8 @@ pricing:                         # PENDIENTE: precios y fecha reales
   currency: S/
   eyebrow: TU PEDIDO
   title: ¿Cuántas te llevas?
-  highlightQty: 2
+  maxQty: 12
+  tiersNote: Mientras más llevas, menos pagas por cada una. Mezcla portadas y formatos como quieras.
   productOne: Agenda Áurea
   productMany: Agendas Áurea
   unitOne: agenda
@@ -175,8 +183,30 @@ finalCta:
   sub: Elige tu portada y empieza 2027 con un plan que sí vas a abrir.
   cta: Elegir mi portada
 
+cart:
+  title: Tu carrito
+  open: Abrir carrito
+  close: Cerrar carrito
+  addCta: Agregar al carrito
+  added: "Agregada: {edition} · {format}"
+  empty: Tu carrito está vacío.
+  emptyHint: Elige una portada y un formato para empezar.
+  emptyCta: Elegir mi portada
+  decrease: Una menos
+  increase: Una más
+  remove: Quitar
+  total: Total
+  savings: Ahorras {amount} por llevar varias
+  checkout: Pedir por WhatsApp
+  keepShopping: Seguir eligiendo
+  note: Te escribimos por WhatsApp para confirmar dirección y pago. En esta página no se cobra nada.
+  max: Máximo {max} agendas por pedido
+  viewCart: Ver carrito
+  messageIntro: "Hola, quiero hacer este pedido:"
+  messageLine: "• {qty} × {edition} · {format}"
+  messageTotal: "Total: {total} ({count} {unit})"
+
 ui:
-  navCta: Pedir
   fromPrice: Desde {price} por agenda
   savings: Ahorras {amount}
   stickyCta: Elegir mi portada
