@@ -12,7 +12,7 @@ brand:
   email: hola@agendaaurea.com
 
 whatsapp:
-  number: "51900000000"          # PENDIENTE: número real, solo dígitos con código de país
+  number: "51948960499"
   orderMessage: "Hola, quiero pedir {qty} {product}"   # {qty} y {product} los completa la app
 
 topBanner: Envío gratis en Lima hasta el 10/11
