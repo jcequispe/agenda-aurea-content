@@ -1,0 +1,163 @@
+# yaml-language-server: $schema=../../schema/content.schema.json
+#
+# Receta de la landing "Imperfecta / Áurea". La app la descarga en runtime.
+# - Rutas de imagen/video: relativas a la carpeta media/ de este repo.
+# - Todo lo marcado PENDIENTE es placeholder: reemplazar por datos reales.
+
+version: 1
+site: imperfecta
+
+brand:
+  wordmark: Áurea
+  email: hola@agendaaurea.com
+
+whatsapp:
+  number: "51900000000"          # PENDIENTE: número real, solo dígitos con código de país
+  orderMessage: "Hola, quiero hacer mi pedido de Agenda Áurea 2027"
+
+topBanner: Envío gratis en Lima hasta el 10/11
+
+hero:
+  image: imperfecta/hero/hero.jpg
+  # video:                       # opcional: si existe, la app lo usa sobre la imagen
+  #   src: imperfecta/video/clips/hero.mp4
+  #   srcWebm: imperfecta/video/clips/hero.webm
+  #   poster: imperfecta/video/posters/hero.jpg
+  ctaPrimary: La quiero ya
+
+marquee:
+  - sin presión
+  - a tu ritmo
+  - tu año, tu forma
+
+socialProof:
+  eyebrow: 2.ª EDICIÓN · AGENDA ÁUREA 2027
+  stat: "[cifra pendiente]"      # PENDIENTE: cifra real y verificable
+  text: mujeres ya organizan su año con Áurea
+
+editions:
+  - { id: oro,       label: Oro,       color: "#c9942f", image: imperfecta/editions/oro.jpg }
+  - { id: terracota, label: Terracota, color: "#b5653f", image: imperfecta/editions/terracota.jpg }
+  - { id: noche,     label: Noche,     color: "#1c2b3a", image: imperfecta/editions/noche.jpg }
+  - { id: jardin,    label: Jardín,    color: "#4c6b4f", image: imperfecta/editions/jardin.jpg }
+  - { id: blush,     label: Blush,     color: "#d9a7a0", image: imperfecta/editions/blush.jpg }
+  - { id: menta,     label: Menta,     color: "#9ec6b0", image: imperfecta/editions/menta.jpg }
+  - { id: arena,     label: Arena,     color: "#cdb78f", image: imperfecta/editions/arena.jpg }
+  - { id: vino,      label: Vino,      color: "#6b3340", image: imperfecta/editions/vino.jpg }
+  - { id: cielo,     label: Cielo,     color: "#7fa0c2", image: imperfecta/editions/cielo.jpg }
+  - { id: bosque,    label: Bosque,    color: "#2f4a3a", image: imperfecta/editions/bosque.jpg }
+
+# PENDIENTE: reemplazar por testimonios reales de compradoras.
+testimonials:
+  - quote: La compré sin muchas expectativas y terminó siendo lo único que no abandoné en todo el año. Las hojas resisten hasta el café derramado.
+    name: Valeria C.
+    place: Lima
+    tag: Terracota · 2026
+  - quote: Dejé de sentir culpa por no llenar cada casilla. Esta agenda se adapta a mi semana, no al revés.
+    name: Daniela R.
+    place: Arequipa
+    tag: Oro · 2025
+  - quote: El anillado abre completamente plano — puedo escribir hasta en el bus sin que se cierre sola.
+    name: Fiorella M.
+    place: Trujillo
+    tag: Bosque · 2026
+  - quote: La regalé y ahora mi hermana también quiere la suya. El empaque solo ya se siente como un regalo caro.
+    name: Ximena T.
+    place: Lima
+    tag: Blush · 2025
+
+priceFaq:
+  eyebrow: LA PREGUNTA QUE MÁS NOS HACEN
+  question: ¿La diaria cuesta más?
+  answer: No. Mismo precio, elijas semanal o diaria — la diferencia es cuánto espacio quieres por día, no cuánto pagas.
+
+formats:
+  image: imperfecta/product/format.jpg
+  items:
+    - { id: semanal, name: Semanal, detail: una semana por doble página }
+    - { id: diaria,  name: Diaria,  detail: un día por página }
+
+features:
+  - category: METAS · DINERO
+    title: Tu año, en una sola vista
+    body: Objetivos del mes, lo que entra, lo que sale — todo en una página, sin cambiar de app.
+    image: imperfecta/features/feature-1.jpg
+  - category: HÁBITOS
+    title: Lo que repites, a la vista
+    body: Una cuadrícula para marcar lo que ya hiciste — no otra lista de lo que te falta.
+    image: imperfecta/features/feature-2.jpg
+  - category: CIERRE DE SEMANA
+    title: Un espacio para mirar atrás
+    body: Tres preguntas al cierre de cada semana, para ajustar la siguiente sin empezar de cero.
+    image: imperfecta/features/feature-3.jpg
+
+collage:
+  - imperfecta/collage/collage-0.jpg
+  - imperfecta/collage/collage-1.jpg
+  - imperfecta/collage/collage-2.jpg
+  - imperfecta/collage/collage-3.jpg
+
+details:
+  eyebrow: DETALLES
+  title: Hecha para durar el año entero
+  materials:
+    - { label: Tapa dura,              detail: resiste la mochila sin doblarse }
+    - { label: Detalle dorado,         detail: en relieve sobre la portada }
+    - { label: Esquineros metálicos,   detail: para que no se gasten las puntas }
+    - { label: Anillo doble,           detail: abre completamente plana }
+    - { label: Liga de cierre,         detail: para que no se abra sola en la mochila }
+    - { label: Cinta separadora doble, detail: hoy y lo que viene }
+    - { label: Bolsillo interior,      detail: para tarjetas y notas sueltas }
+
+sizeSpec:
+  eyebrow: TAMAÑO REAL
+  title: A5 — entra en cualquier cartera
+  detail: Cerrada mide 17,6 × 21,5 cm.
+  weights: [Semanal · 620 g, Diaria · 820 g]
+  image: imperfecta/product/size-spec.jpg
+
+giftBonus:                       # PENDIENTE: precio y vigencia del regalo
+  tag: REGALO
+  stamp: SOLO EN PREVENTA
+  title: De regalo
+  detail: un organizador de escritorio 2027 por cada agenda.
+  valueNote: Se vende por separado a S/ [xx]
+  multiNote: Compras 3, te llevas 3.
+  image: imperfecta/product/gift-bonus.jpg
+
+unboxing:
+  text: Llega en su propia caja de regalo — lista para abrir o para regalar.
+  image: imperfecta/product/unboxing.jpg
+
+pricing:                         # PENDIENTE: precios reales
+  currency: S/
+  eyebrow: TU PEDIDO
+  title: ¿Cuántas te llevas?
+  tiers:
+    - { qty: 1, total: 95 }
+    - { qty: 2, total: 180, perUnit: 90 }
+    - { qty: 3, total: 255, perUnit: 85 }
+  deadlineNote: Hasta el [fecha], tu agenda viene con el organizador de regalo.
+  afterNote: Después, S/ [xx] sin el regalo.
+  mixNote: Eliges portada y formato de cada una · puedes mezclarlas.
+  payNote: Pagas con Yape o tarjeta.
+
+faq:
+  - q: ¿Cuándo llega?
+    a: "Es preventa: pagas hoy y los envíos empiezan el [fecha]. Apenas despachemos la tuya, te mandamos el seguimiento."
+  - q: ¿Por qué hacen preventa?
+    a: Así imprimimos exactamente lo que se vende — sin stock de más que termine rematado, ni faltante que te deje esperando.
+  - q: ¿Cómo coordinan la entrega?
+    a: Te escribimos por WhatsApp para confirmar dirección y la mejor fecha — en Lima y para el resto del país.
+  - q: ¿Puedo cambiar el formato o la portada después de pagar?
+    a: Sí, mientras no hayamos empezado tu envío. Escríbenos y lo ajustamos.
+
+manifesto:
+  eyebrow: Antes de pedir —
+  titleTop: No busques el momento perfecto.
+  titleBottom: Créalo tú.
+
+footer:
+  links: [Términos y condiciones, Privacidad, Promociones]
+  legal: Razón social pendiente · RUC pendiente
+  address: Dirección pendiente

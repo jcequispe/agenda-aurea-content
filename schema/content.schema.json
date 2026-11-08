@@ -1,0 +1,117 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Landing content",
+  "type": "object",
+  "required": ["version", "site", "brand", "whatsapp", "hero", "editions", "pricing", "faq"],
+  "additionalProperties": true,
+  "definitions": {
+    "media": { "type": "string", "pattern": "^[a-z0-9_\\-/]+\\.(jpg|jpeg|png|webp|avif|svg|mp4|webm)$" },
+    "text": { "type": "string", "minLength": 1 },
+    "titled": {
+      "type": "object",
+      "required": ["title"],
+      "properties": { "eyebrow": { "type": "string" }, "title": { "type": "string" } }
+    }
+  },
+  "properties": {
+    "version": { "const": 1 },
+    "site": { "type": "string", "pattern": "^[a-z0-9\\-]+$" },
+    "brand": {
+      "type": "object",
+      "required": ["wordmark", "email"],
+      "properties": { "wordmark": { "$ref": "#/definitions/text" }, "email": { "type": "string", "format": "email" } }
+    },
+    "whatsapp": {
+      "type": "object",
+      "required": ["number", "orderMessage"],
+      "properties": {
+        "number": { "type": "string", "pattern": "^[0-9]{8,15}$" },
+        "orderMessage": { "$ref": "#/definitions/text" }
+      }
+    },
+    "topBanner": { "type": "string" },
+    "hero": {
+      "type": "object",
+      "required": ["image", "ctaPrimary"],
+      "properties": {
+        "image": { "$ref": "#/definitions/media" },
+        "ctaPrimary": { "$ref": "#/definitions/text" },
+        "video": {
+          "type": "object",
+          "required": ["src", "poster"],
+          "properties": {
+            "src": { "$ref": "#/definitions/media" },
+            "srcWebm": { "$ref": "#/definitions/media" },
+            "poster": { "$ref": "#/definitions/media" }
+          }
+        }
+      }
+    },
+    "marquee": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "editions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "color", "image"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9\\-]+$" },
+          "label": { "$ref": "#/definitions/text" },
+          "color": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" },
+          "image": { "$ref": "#/definitions/media" }
+        }
+      }
+    },
+    "testimonials": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["quote", "name"],
+        "properties": {
+          "quote": { "$ref": "#/definitions/text" },
+          "name": { "$ref": "#/definitions/text" },
+          "place": { "type": "string" },
+          "tag": { "type": "string" }
+        }
+      }
+    },
+    "collage": { "type": "array", "items": { "$ref": "#/definitions/media" } },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "body"],
+        "properties": { "image": { "$ref": "#/definitions/media" } }
+      }
+    },
+    "pricing": {
+      "type": "object",
+      "required": ["currency", "tiers"],
+      "properties": {
+        "currency": { "type": "string" },
+        "tiers": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["qty", "total"],
+            "properties": {
+              "qty": { "type": "integer", "minimum": 1 },
+              "total": { "type": "number", "minimum": 0 },
+              "perUnit": { "type": "number", "minimum": 0 }
+            }
+          }
+        }
+      }
+    },
+    "faq": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["q", "a"],
+        "properties": { "q": { "$ref": "#/definitions/text" }, "a": { "$ref": "#/definitions/text" } }
+      }
+    }
+  }
+}
