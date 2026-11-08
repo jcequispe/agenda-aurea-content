@@ -13,7 +13,7 @@ brand:
 
 whatsapp:
   number: "51900000000"          # PENDIENTE: número real, solo dígitos con código de país
-  orderMessage: "Hola, quiero hacer mi pedido de Agenda Áurea 2027"
+  orderMessage: "Hola, quiero pedir {qty} {product}"   # {qty} y {product} los completa la app
 
 topBanner: Envío gratis en Lima hasta el 10/11
 
@@ -131,6 +131,13 @@ unboxing:
 
 pricing:                         # PENDIENTE: precios reales
   currency: S/
+  highlightQty: 2                # tramo preseleccionado y mostrado en la barra fija
+  productOne: Agenda Áurea
+  productMany: Agendas Áurea
+  unitOne: agenda
+  unitMany: agendas
+  perUnitLabel: Cada una te sale en
+  buyLabel: Comprar
   eyebrow: TU PEDIDO
   title: ¿Cuántas te llevas?
   tiers:
@@ -141,6 +148,13 @@ pricing:                         # PENDIENTE: precios reales
   afterNote: Después, S/ [xx] sin el regalo.
   mixNote: Eliges portada y formato de cada una · puedes mezclarlas.
   payNote: Pagas con Yape o tarjeta.
+
+ui:
+  formatTag: FORMATO
+  editionCta: Quiero la {label}   # {label} = nombre de la edición activa
+  faqTag: DUDAS
+  faqTitle: Lo que nos preguntan
+  faqSub: Si no está aquí, pregúntanos. Contestamos nosotras, no un robot.
 
 faq:
   - q: ¿Cuándo llega?
