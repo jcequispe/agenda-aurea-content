@@ -627,7 +627,9 @@
         "daysShort",
         "hoursShort",
         "minutesShort",
-        "whatsappCta"
+        "whatsappCta",
+        "fromPrice",
+        "savings"
       ],
       "additionalProperties": {
         "type": "string"

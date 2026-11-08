@@ -13,7 +13,7 @@ brand:
 
 whatsapp:
   number: "51900000000"          # PENDIENTE: número real
-  orderMessage: "Hola, quiero pedir {qty} {product}"
+  orderMessage: "Hola, quiero pedir {qty} {product}. Portada: {edition}. Formato: {format}."
 
 topBanner: Envío gratis en Lima hasta el 10/11
 
@@ -177,6 +177,8 @@ finalCta:
 
 ui:
   navCta: Pedir
+  fromPrice: Desde {price} por agenda
+  savings: Ahorras {amount}
   stickyCta: Elegir mi portada
   faqEyebrow: DUDAS
   faqTitle: Lo que nos preguntan
