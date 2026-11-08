@@ -23,7 +23,9 @@
     "faq",
     "finalCta",
     "ui",
-    "footer"
+    "footer",
+    "nav",
+    "cart"
   ],
   "definitions": {
     "media": {
@@ -58,17 +60,12 @@
     "whatsapp": {
       "type": "object",
       "required": [
-        "number",
-        "orderMessage"
+        "number"
       ],
       "properties": {
         "number": {
           "type": "string",
           "pattern": "^[0-9]{8,15}$"
-        },
-        "orderMessage": {
-          "type": "string",
-          "minLength": 1
         }
       }
     },
@@ -119,6 +116,13 @@
         "ctaSecondary": {
           "type": "string",
           "minLength": 1
+        },
+        "chips": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
         }
       }
     },
@@ -452,7 +456,6 @@
         "currency",
         "eyebrow",
         "title",
-        "highlightQty",
         "productOne",
         "productMany",
         "unitOne",
@@ -461,16 +464,14 @@
         "buyLabel",
         "tiers",
         "mixNote",
-        "payNote"
+        "payNote",
+        "maxQty",
+        "tiersNote"
       ],
       "properties": {
         "currency": {
           "type": "string",
           "minLength": 1
-        },
-        "highlightQty": {
-          "type": "integer",
-          "minimum": 1
         },
         "deadline": {
           "type": "string",
@@ -506,6 +507,15 @@
               }
             }
           }
+        },
+        "maxQty": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 50
+        },
+        "tiersNote": {
+          "type": "string",
+          "minLength": 1
         }
       }
     },
@@ -619,7 +629,6 @@
     "ui": {
       "type": "object",
       "required": [
-        "navCta",
         "stickyCta",
         "faqEyebrow",
         "faqTitle",
@@ -658,6 +667,64 @@
           "type": "string",
           "minLength": 1
         }
+      }
+    },
+    "nav": {
+      "type": "object",
+      "required": [
+        "links"
+      ],
+      "properties": {
+        "links": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "label",
+              "href"
+            ],
+            "properties": {
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "href": {
+                "type": "string",
+                "pattern": "^#[a-z0-9\\-]+$"
+              }
+            }
+          }
+        }
+      }
+    },
+    "cart": {
+      "type": "object",
+      "required": [
+        "title",
+        "open",
+        "close",
+        "addCta",
+        "added",
+        "empty",
+        "emptyHint",
+        "emptyCta",
+        "decrease",
+        "increase",
+        "remove",
+        "total",
+        "savings",
+        "checkout",
+        "keepShopping",
+        "note",
+        "max",
+        "viewCart",
+        "messageIntro",
+        "messageLine",
+        "messageTotal"
+      ],
+      "additionalProperties": {
+        "type": "string"
       }
     }
   }
