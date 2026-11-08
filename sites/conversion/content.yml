@@ -65,18 +65,74 @@ editionsSection:
   title: Elige la portada que te represente.
   sub: Diez colores. Eliges portada y formato de cada una, y puedes mezclarlas.
   cta: Quiero la {label}
+  reassure:
+    - Pagas por WhatsApp, no en esta página
+    - Cambias de portada hasta el despacho
+    - Envíos a todo el Perú
 
 editions:
-  - { id: oro,       label: Oro,       color: "#c9942f", image: imperfecta/editions/oro.jpg }
-  - { id: terracota, label: Terracota, color: "#b5653f", image: imperfecta/editions/terracota.jpg }
-  - { id: noche,     label: Noche,     color: "#1c2b3a", image: imperfecta/editions/noche.jpg }
-  - { id: jardin,    label: Jardín,    color: "#4c6b4f", image: imperfecta/editions/jardin.jpg }
-  - { id: blush,     label: Blush,     color: "#d9a7a0", image: imperfecta/editions/blush.jpg }
-  - { id: menta,     label: Menta,     color: "#9ec6b0", image: imperfecta/editions/menta.jpg }
-  - { id: arena,     label: Arena,     color: "#cdb78f", image: imperfecta/editions/arena.jpg }
-  - { id: vino,      label: Vino,      color: "#6b3340", image: imperfecta/editions/vino.jpg }
-  - { id: cielo,     label: Cielo,     color: "#7fa0c2", image: imperfecta/editions/cielo.jpg }
-  - { id: bosque,    label: Bosque,    color: "#2f4a3a", image: imperfecta/editions/bosque.jpg }
+  - { id: oro,       label: Oro,       color: "#c9942f", image: imperfecta/editions/oro.jpg, tags: [elegante, calido] }
+  - { id: terracota, label: Terracota, color: "#b5653f", image: imperfecta/editions/terracota.jpg, tags: [calido, natural] }
+  - { id: noche,     label: Noche,     color: "#1c2b3a", image: imperfecta/editions/noche.jpg, tags: [elegante, sobrio] }
+  - { id: jardin,    label: Jardín,    color: "#4c6b4f", image: imperfecta/editions/jardin.jpg, tags: [natural, calma] }
+  - { id: blush,     label: Blush,     color: "#d9a7a0", image: imperfecta/editions/blush.jpg, tags: [dulce, calma] }
+  - { id: menta,     label: Menta,     color: "#9ec6b0", image: imperfecta/editions/menta.jpg, tags: [calma, fresco] }
+  - { id: arena,     label: Arena,     color: "#cdb78f", image: imperfecta/editions/arena.jpg, tags: [sobrio, calido] }
+  - { id: vino,      label: Vino,      color: "#6b3340", image: imperfecta/editions/vino.jpg, tags: [elegante, atrevido] }
+  - { id: cielo,     label: Cielo,     color: "#7fa0c2", image: imperfecta/editions/cielo.jpg, tags: [fresco, calma] }
+  - { id: bosque,    label: Bosque,    color: "#2f4a3a", image: imperfecta/editions/bosque.jpg, tags: [natural, sobrio] }
+
+demo:
+  eyebrow: PRUÉBALA ANTES DE COMPRARLA
+  title: Así se siente una semana sin culpa.
+  sub: "Toca los días. Hecho, descanso o en blanco: la semana siempre cuenta lo que sí hiciste."
+  note: Demostración con datos de ejemplo. En tu agenda escribes lo tuyo.
+  weekLabel: Tu semana
+  days: [L, M, X, J, V, S, D]
+  daysLong: [Lunes, Martes, Miércoles, Jueves, Viernes, Sábado, Domingo]
+  states:
+    empty: En blanco
+    done: Hecho
+    rest: Descanso
+  habitsLabel: Lo que repites
+  habits: [Leer 10 min, Moverme, Dormir temprano]
+  ringLabel: días en movimiento
+  messages:
+    zero: Empieza por cualquier día. No hay orden correcto.
+    some: "{n} de 7 días en movimiento. Los demás también son parte de la semana."
+    most: "{n} de 7. Una semana sólida, sin necesitar que sea perfecta."
+    all: "7 de 7. Y si mañana falla uno, la agenda sigue contigo."
+  cta: Quiero esta agenda
+  reset: Empezar de nuevo
+
+finder:
+  eyebrow: ¿NO SABES CUÁL ELEGIR?
+  title: Encuentra tu portada en 3 preguntas.
+  sub: Sin registrarte. Te sugerimos una y puedes cambiarla cuando quieras.
+  step: Pregunta {n} de {total}
+  questions:
+    - q: ¿Dónde la vas a usar más?
+      options:
+        - { label: "En el escritorio, a diario", tags: [sobrio, elegante] }
+        - { label: "En el café o la mochila", tags: [calido, natural] }
+        - { label: "En casa, con calma", tags: [calma, dulce] }
+        - { label: "De viaje", tags: [fresco, atrevido] }
+    - q: ¿Qué quieres sentir al abrirla?
+      options:
+        - { label: "Orden y foco", tags: [sobrio, elegante] }
+        - { label: "Calma", tags: [calma, fresco] }
+        - { label: "Energía", tags: [atrevido, calido] }
+        - { label: "Ternura", tags: [dulce, natural] }
+    - q: Elige un ambiente
+      options:
+        - { label: "Bosque después de la lluvia", tags: [natural, calma] }
+        - { label: "Atardecer cálido", tags: [calido, atrevido] }
+        - { label: "Biblioteca de noche", tags: [elegante, sobrio] }
+        - { label: "Mañana frente al mar", tags: [fresco, dulce] }
+  resultEyebrow: TU PORTADA SUGERIDA
+  resultCta: Elegir la {label}
+  alsoLike: También te puede gustar
+  restart: Volver a empezar
 
 formats:
   eyebrow: FORMATO
@@ -101,6 +157,7 @@ details:
   size: A5 · cerrada mide 17,6 × 21,5 cm · Semanal 620 g · Diaria 820 g
 
 proof:                           # PENDIENTE: cifra y testimonios reales
+  verified: false                # true SOLO con reseñas reales y autorizadas; si es false la sección no se muestra
   eyebrow: LO QUE DICEN
   title: Compradoras de ediciones anteriores
   stat: "[cifra pendiente]"
@@ -217,6 +274,13 @@ ui:
   hoursShort: h
   minutesShort: min
   whatsappCta: ¿Dudas? Escríbenos por WhatsApp
+  perDay: Menos de {amount} al día durante todo 2027
+  nudge: Agrega {n} más y cada una te sale en {price}
+  nudgeSave: Ahorras {amount} en total
+  nudgeBest: Ya tienes el mejor precio por agenda
+  heroPick: Elige tu color
+  chosen: Elegida
+  pickOne: Elegir la {label}
 
 footer:
   links: [Términos y condiciones, Privacidad, Promociones]
