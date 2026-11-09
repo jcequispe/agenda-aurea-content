@@ -188,8 +188,8 @@ steps:
     - title: Recibes
       body: Llega en su caja de regalo, con seguimiento desde el despacho.
 
-pricing:                         # PENDIENTE: precios y fecha reales
-  currency: S/
+pricing:                         # precio real: 1 agenda = USD 42. Tramos 2/3 calculados con el mismo % de dcto. del mock (~5% y ~10.5%); ajusta si tienen otro precio.
+  currency: "$"
   eyebrow: TU PEDIDO
   title: ¿Cuántas te llevas?
   maxQty: 12
@@ -203,9 +203,9 @@ pricing:                         # PENDIENTE: precios y fecha reales
   deadline: "2026-11-30T23:59:00-05:00"   # fin del regalo de preventa; pasada la fecha la cuenta regresiva se oculta
   deadlineLabel: El regalo de preventa termina en
   tiers:
-    - { qty: 1, total: 95,  note: Para empezar }
-    - { qty: 2, total: 180, perUnit: 90, note: Ideal para regalar }
-    - { qty: 3, total: 255, perUnit: 85, note: Mejor precio por agenda }
+    - { qty: 1, total: 42,     note: Para empezar }
+    - { qty: 2, total: 79.58,  perUnit: 39.79, note: Ideal para regalar }
+    - { qty: 3, total: 112.74, perUnit: 37.58, note: Mejor precio por agenda }
   mixNote: Eliges portada y formato de cada una · puedes mezclarlas.
   payNote: Pagas con Yape o tarjeta.
 
