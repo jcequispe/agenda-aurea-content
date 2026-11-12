@@ -339,6 +339,9 @@
         "image": {
           "$ref": "#/definitions/media"
         },
+        "video": {
+          "$ref": "#/definitions/media"
+        },
         "size": {
           "type": "string",
           "minLength": 1
