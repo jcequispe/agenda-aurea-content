@@ -1,87 +1,148 @@
 # yaml-language-server: $schema=../../schema/conversion.schema.json
 #
-# *** DATOS MOCK: testimonios, cifra, fechas, valor del regalo y datos legales son inventados para previsualizar. Reemplazar antes de publicar. ***
-# Landing #4 — Imperfecta optimizada para conversión (CRO + psicología + UX).
-# Reutiliza la media de imperfecta/. Todo lo marcado PENDIENTE es placeholder:
-# NO inventar cifras, reseñas ni garantías que el negocio no pueda cumplir.
+# Landing #4 — E·Sencia / Agenda Renacer 2027 (marca y fotos reales del cliente).
+# Un solo modelo de agenda (una sola portada, una sola edición): por eso no hay
+# selector de color ni test de portada. Lo marcado PENDIENTE es placeholder:
+# NO inventar precios, cifras, reseñas ni garantías que el negocio no pueda cumplir.
 
 version: 1
 site: conversion
 
 brand:
-  wordmark: Áurea
-  email: hola@agendaaurea.com
+  wordmark: E·Sencia
+  logo: renacer/brand/logo.jpg
+  email: hola@esencia.pe # PENDIENTE: confirmar dominio/correo real
 
 whatsapp:
   number: "51948960499"
 
-topBanner: Envío gratis en Lima hasta el 30/11
+topBanner: Envíos a todo el Perú
 
 nav:
   links:
-    - { label: Portadas,  href: "#elige" }
-    - { label: Detalles,  href: "#detalles" }
-    - { label: Precios,   href: "#pedido" }
-    - { label: Preguntas, href: "#preguntas" }
+    - { label: El método,  href: "#metodo" }
+    - { label: Por dentro, href: "#detalles" }
+    - { label: Precios,    href: "#pedido" }
+    - { label: Preguntas,  href: "#preguntas" }
 
 hero:
-  eyebrow: AGENDA ÁUREA 2027 · PREVENTA
-  title: Tu año en orden,
-  titleAccent: sin culpa por los días en blanco.
-  sub: Una agenda que se adapta a tu semana, no al revés. Diez portadas, hojas que resisten el año entero y un espacio para mirar atrás cada domingo.
-  image: imperfecta/hero/hero.jpg
-  ctaPrimary: Elegir mi portada
+  eyebrow: E·SENCIA · AGENDA RENACER 2027
+  title: De tu Estado A
+  titleAccent: a tu Estado B.
+  sub: Ejercicios para acompañar tu transformación emocional. Una pregunta a la vez, una semana a la vez.
+  image: renacer/lifestyle/hug.jpg
+  ctaPrimary: Quiero mi Agenda Renacer
   ctaSecondary: Ver cómo es por dentro
-  chips: [Tapa dura, Anillo doble, Formato A5, 10 portadas]
+  chips: [Tapa dura texturizada, Anillado doble dorado, Esquineros metálicos, Cierre con liga]
   assurances:
-    - Paga con Yape o tarjeta
+    - Pagas por WhatsApp, no en esta página
     - Envíos a todo el Perú
-    - Cambia de portada hasta el despacho
+    - "Edición única: la misma agenda para todas"
 
 problem:
   eyebrow: ¿TE SUENA?
-  title: La mayoría de agendas se abandona en febrero.
-  body: No es falta de disciplina. Es que te piden llenar cada casilla, todos los días, y un solo día en blanco ya se siente como un fracaso.
+  title: La mayoría de agendas solo reciben tareas.
+  body: Nunca te preguntan cómo estás, qué sientes o hacia dónde quieres ir. Terminan llenas de pendientes y vacías de ti.
   points:
-    - Empiezas con ganas y a las tres semanas ya no la abres.
-    - Cada espacio vacío te recuerda lo que no hiciste.
-    - Terminas anotando en el celular y la agenda se queda en el cajón.
+    - Anotas lo que tienes que hacer, nunca cómo lo estás llevando.
+    - No hay espacio para una intención, solo para una casilla.
+    - A mitad de año ya no sabes si avanzaste o solo tachaste pendientes.
 
 benefits:
-  eyebrow: POR ESO LA HICIMOS DISTINTA
-  title: Una agenda que sí vas a usar.
+  eyebrow: EL MÉTODO RENACER
+  title: Una agenda que te acompaña, no solo te organiza.
   items:
-    - title: Tu año, en una sola vista
-      body: Objetivos del mes, lo que entra y lo que sale, todo en una página. Sin cambiar de app.
-      image: imperfecta/features/feature-1.jpg
-    - title: Lo que repites, a la vista
-      body: Una cuadrícula para marcar lo que ya hiciste, no otra lista de lo que te falta.
-      image: imperfecta/features/feature-2.jpg
-    - title: Un espacio para mirar atrás
-      body: Tres preguntas al cierre de cada semana para ajustar la siguiente sin empezar de cero.
-      image: imperfecta/features/feature-3.jpg
+    - title: De tu Estado A a tu Estado B
+      body: Ejercicios guiados para ver, en una sola página, dónde estás hoy y hacia dónde quieres ir.
+      image: renacer/interior/transform-states.jpg
+    - title: Una intención antes de empezar
+      body: Cada día abre con una pregunta, no con una casilla vacía — tu objetivo, un acto de amor propio, tus prioridades.
+      image: renacer/interior/day-intention.jpg
+    - title: Tu semana, en una sola vista
+      body: Domingo a domingo, con espacio para lo que sientes y lo que viene.
+      image: renacer/interior/week-spread.jpg
 
 editionsSection:
-  eyebrow: HAZLA TUYA
-  title: Elige la portada que te represente.
-  sub: Diez colores. Eliges portada y formato de cada una, y puedes mezclarlas.
-  cta: Quiero la {label}
+  eyebrow: TU AGENDA RENACER 2027
+  title: Un solo modelo, hecho para no complicarte.
+  sub: Nada que elegir entre diez opciones. Esta es la agenda, lista para acompañarte todo el año.
+  cta: Quiero mi Agenda Renacer
   reassure:
     - Pagas por WhatsApp, no en esta página
-    - Cambias de portada hasta el despacho
+    - Edición única, sin letra chica
     - Envíos a todo el Perú
 
 editions:
-  - { id: oro,       label: Oro,       color: "#c9942f", image: imperfecta/editions/oro.jpg, tags: [elegante, calido] }
-  - { id: terracota, label: Terracota, color: "#b5653f", image: imperfecta/editions/terracota.jpg, tags: [calido, natural] }
-  - { id: noche,     label: Noche,     color: "#1c2b3a", image: imperfecta/editions/noche.jpg, tags: [elegante, sobrio] }
-  - { id: jardin,    label: Jardín,    color: "#4c6b4f", image: imperfecta/editions/jardin.jpg, tags: [natural, calma] }
-  - { id: blush,     label: Blush,     color: "#d9a7a0", image: imperfecta/editions/blush.jpg, tags: [dulce, calma] }
-  - { id: menta,     label: Menta,     color: "#9ec6b0", image: imperfecta/editions/menta.jpg, tags: [calma, fresco] }
-  - { id: arena,     label: Arena,     color: "#cdb78f", image: imperfecta/editions/arena.jpg, tags: [sobrio, calido] }
-  - { id: vino,      label: Vino,      color: "#6b3340", image: imperfecta/editions/vino.jpg, tags: [elegante, atrevido] }
-  - { id: cielo,     label: Cielo,     color: "#7fa0c2", image: imperfecta/editions/cielo.jpg, tags: [fresco, calma] }
-  - { id: bosque,    label: Bosque,    color: "#2f4a3a", image: imperfecta/editions/bosque.jpg, tags: [natural, sobrio] }
+  - { id: renacer, label: Renacer 2027, color: "#9c7129", image: renacer/cover/cover-plain.jpg }
+
+formats:
+  eyebrow: EDICIÓN
+  title: Una sola agenda, para que elegir sea simple.
+  body: Sin versiones ni variantes — la misma Agenda Renacer 2027 para todas.
+  image: renacer/lifestyle/desk-writing.jpg
+  items:
+    - { id: unica, name: Edición única, detail: la misma para todas, sin letra chica }
+
+details:
+  eyebrow: HECHA PARA DURAR
+  title: Cada detalle, a la vista.
+  image: renacer/lifestyle/desk-writing.jpg
+  materials:
+    - { label: Tapa dura texturizada,     detail: resiste el uso diario }
+    - { label: Anillado doble dorado,     detail: abre completamente plana }
+    - { label: Esquineros metálicos,      detail: para que no se gasten las puntas }
+    - { label: Cierre con liga elástica,  detail: para que no se abra sola en la mochila }
+  size: Tamaño pendiente de confirmar # PENDIENTE: medidas y peso reales
+
+proof:                           # PENDIENTE: sin reseñas reales todavía — no se muestra
+  verified: false
+  eyebrow: LO QUE DICEN
+  title: Compradoras de Agenda Renacer
+  stat: "[cifra pendiente]"
+  statText: mujeres ya la usan para acompañar su año
+  testimonials:
+    - quote: "[pendiente: reseña real de una compradora]"
+      name: Pendiente
+      tag: Sin reseñas reales todavía
+
+steps:
+  eyebrow: ASÍ DE FÁCIL
+  title: De tu pedido a tu escritorio en 3 pasos.
+  items:
+    - title: Eliges cuántas
+      body: Una para ti, o varias para regalar.
+    - title: Pagas
+      body: Con Yape o tarjeta. Te escribimos por WhatsApp para confirmar.
+    - title: Recibes
+      body: Con seguimiento desde el despacho.
+
+pricing:                         # precio real: 1 agenda = USD 42. Tramos 2/3 calculados con el mismo % de dcto. del mock (~5% y ~10.5%); ajusta si tienen otro precio.
+  currency: "$"
+  eyebrow: TU PEDIDO
+  title: ¿Cuántas te llevas?
+  maxQty: 12
+  tiersNote: Mientras más llevas, menos pagas por cada una. Ideal para regalar.
+  productOne: Agenda Renacer
+  productMany: Agendas Renacer
+  unitOne: agenda
+  unitMany: agendas
+  perUnitLabel: Cada una te sale en
+  buyLabel: Pedir por WhatsApp
+  tiers:
+    - { qty: 1, total: 42,     note: Para empezar }
+    - { qty: 2, total: 79.58,  perUnit: 39.79, note: Ideal para regalar }
+    - { qty: 3, total: 112.74, perUnit: 37.58, note: Mejor precio por agenda }
+  mixNote: Para ti, o para regalar.
+  payNote: Pagas con Yape o tarjeta.
+
+unboxing:
+  title: Para leer con calma, donde sea.
+  body: Un libro para llevar contigo — al café, a la terraza, a ver el atardecer.
+  image: renacer/lifestyle/friends-cafe.jpg
+
+guarantee:                       # PENDIENTE: confirmar la política antes de publicar
+  title: Cambias de opinión sin problema.
+  body: Escríbenos antes de que despachemos tu pedido y lo ajustamos.
 
 demo:
   eyebrow: PRUÉBALA ANTES DE COMPRARLA
@@ -103,153 +164,33 @@ demo:
     some: "{n} de 7 días en movimiento. Los demás también son parte de la semana."
     most: "{n} de 7. Una semana sólida, sin necesitar que sea perfecta."
     all: "7 de 7. Y si mañana falla uno, la agenda sigue contigo."
-  cta: Quiero esta agenda
+  cta: Quiero mi Agenda Renacer
   reset: Empezar de nuevo
-
-finder:
-  eyebrow: ¿NO SABES CUÁL ELEGIR?
-  title: Encuentra tu portada en 3 preguntas.
-  sub: Sin registrarte. Te sugerimos una y puedes cambiarla cuando quieras.
-  step: Pregunta {n} de {total}
-  questions:
-    - q: ¿Dónde la vas a usar más?
-      options:
-        - { label: "En el escritorio, a diario", tags: [sobrio, elegante] }
-        - { label: "En el café o la mochila", tags: [calido, natural] }
-        - { label: "En casa, con calma", tags: [calma, dulce] }
-        - { label: "De viaje", tags: [fresco, atrevido] }
-    - q: ¿Qué quieres sentir al abrirla?
-      options:
-        - { label: "Orden y foco", tags: [sobrio, elegante] }
-        - { label: "Calma", tags: [calma, fresco] }
-        - { label: "Energía", tags: [atrevido, calido] }
-        - { label: "Ternura", tags: [dulce, natural] }
-    - q: Elige un ambiente
-      options:
-        - { label: "Bosque después de la lluvia", tags: [natural, calma] }
-        - { label: "Atardecer cálido", tags: [calido, atrevido] }
-        - { label: "Biblioteca de noche", tags: [elegante, sobrio] }
-        - { label: "Mañana frente al mar", tags: [fresco, dulce] }
-  resultEyebrow: TU PORTADA SUGERIDA
-  resultCta: Elegir la {label}
-  alsoLike: También te puede gustar
-  restart: Volver a empezar
-
-formats:
-  eyebrow: FORMATO
-  title: Semanal o diaria, al mismo precio.
-  body: La diferencia es cuánto espacio quieres por día, no cuánto pagas.
-  image: imperfecta/product/format.jpg
-  items:
-    - { id: semanal, name: Semanal, detail: una semana por doble página }
-    - { id: diaria,  name: Diaria,  detail: un día por página }
-
-details:
-  eyebrow: HECHA PARA DURAR
-  title: Cada detalle pensado para el año entero.
-  image: imperfecta/collage/collage-1.jpg
-  materials:
-    - { label: Tapa dura,              detail: resiste la mochila sin doblarse }
-    - { label: Anillo doble,           detail: abre completamente plana }
-    - { label: Esquineros metálicos,   detail: para que no se gasten las puntas }
-    - { label: Liga de cierre,         detail: para que no se abra sola en la mochila }
-    - { label: Cinta separadora doble, detail: hoy y lo que viene }
-    - { label: Bolsillo interior,      detail: para tarjetas y notas sueltas }
-  size: A5 · cerrada mide 17,6 × 21,5 cm · Semanal 620 g · Diaria 820 g
-
-proof:                           # PENDIENTE: cifra y testimonios reales
-  verified: true                 # MOCK ACTIVO: pasar a false (o reemplazar por reseñas reales) antes de publicar de verdad
-  eyebrow: LO QUE DICEN
-  title: Compradoras de ediciones anteriores
-  stat: "1.200"
-  statText: mujeres ya organizan su año con Áurea
-  testimonials:
-    - quote: La compré sin muchas expectativas y terminó siendo lo único que no abandoné en todo el año. Las hojas resisten hasta el café derramado.
-      name: Valeria C.
-      place: Lima
-      tag: Terracota · 2026
-    - quote: Dejé de sentir culpa por no llenar cada casilla. Esta agenda se adapta a mi semana, no al revés.
-      name: Daniela R.
-      place: Arequipa
-      tag: Oro · 2025
-    - quote: El anillado abre completamente plano, puedo escribir hasta en el bus sin que se cierre sola.
-      name: Fiorella M.
-      place: Trujillo
-      tag: Bosque · 2026
-
-steps:
-  eyebrow: ASÍ DE FÁCIL
-  title: De tu pedido a tu escritorio en 3 pasos.
-  items:
-    - title: Eliges
-      body: Portada, formato y cuántas te llevas.
-    - title: Pagas
-      body: Con Yape o tarjeta. Te escribimos por WhatsApp para confirmar.
-    - title: Recibes
-      body: Llega en su caja de regalo, con seguimiento desde el despacho.
-
-pricing:                         # precio real: 1 agenda = USD 42. Tramos 2/3 calculados con el mismo % de dcto. del mock (~5% y ~10.5%); ajusta si tienen otro precio.
-  currency: "$"
-  eyebrow: TU PEDIDO
-  title: ¿Cuántas te llevas?
-  maxQty: 12
-  tiersNote: Mientras más llevas, menos pagas por cada una. Mezcla portadas y formatos como quieras.
-  productOne: Agenda Áurea
-  productMany: Agendas Áurea
-  unitOne: agenda
-  unitMany: agendas
-  perUnitLabel: Cada una te sale en
-  buyLabel: Pedir por WhatsApp
-  deadline: "2026-11-30T23:59:00-05:00"   # fin del regalo de preventa; pasada la fecha la cuenta regresiva se oculta
-  deadlineLabel: El regalo de preventa termina en
-  tiers:
-    - { qty: 1, total: 42,     note: Para empezar }
-    - { qty: 2, total: 79.58,  perUnit: 39.79, note: Ideal para regalar }
-    - { qty: 3, total: 112.74, perUnit: 37.58, note: Mejor precio por agenda }
-  mixNote: Eliges portada y formato de cada una · puedes mezclarlas.
-  payNote: Pagas con Yape o tarjeta.
-
-gift:                            # PENDIENTE: valor y vigencia del regalo
-  tag: DE REGALO EN PREVENTA
-  title: Un organizador de escritorio 2027 por cada agenda.
-  note: Se vende por separado a S/ 35
-  image: imperfecta/product/gift-bonus.jpg
-
-unboxing:
-  title: Llega lista para abrir o para regalar.
-  body: Cada agenda viaja en su propia caja de regalo.
-  image: imperfecta/product/unboxing.jpg
-
-guarantee:                       # PENDIENTE: confirmar la política antes de publicar
-  title: Cambias de opinión sin problema.
-  body: Puedes cambiar el formato o la portada mientras no hayamos empezado tu envío. Escríbenos y lo ajustamos.
 
 faq:
   - q: ¿Cuándo llega?
-    a: "Es preventa: pagas hoy y los envíos empiezan el 15 de enero de 2027. Apenas despachemos la tuya, te mandamos el seguimiento."
-  - q: ¿Por qué hacen preventa?
-    a: Así imprimimos exactamente lo que se vende, sin stock de más que termine rematado ni faltante que te deje esperando.
-  - q: ¿La diaria cuesta más?
-    a: No. Mismo precio, elijas semanal o diaria.
+    a: Te escribimos por WhatsApp apenas despachemos tu pedido, con el seguimiento.
+  - q: ¿Qué contiene la agenda?
+    a: Ejercicios guiados de transformación emocional, intenciones diarias, hábitos y tu semana completa, mes a mes.
   - q: ¿Cómo coordinan la entrega?
     a: Te escribimos por WhatsApp para confirmar dirección y la mejor fecha, en Lima y para el resto del país.
-  - q: ¿Puedo cambiar el formato o la portada después de pagar?
+  - q: ¿Puedo cambiar mi pedido después de pagar?
     a: Sí, mientras no hayamos empezado tu envío. Escríbenos y lo ajustamos.
 
 finalCta:
   title: No busques el momento perfecto. Créalo tú.
-  sub: Elige tu portada y empieza 2027 con un plan que sí vas a abrir.
-  cta: Elegir mi portada
+  sub: Empieza 2027 con una agenda que te acompaña de verdad.
+  cta: Quiero mi Agenda Renacer
 
 cart:
   title: Tu carrito
   open: Abrir carrito
   close: Cerrar carrito
   addCta: Agregar al carrito
-  added: "Agregada: {edition} · {format}"
+  added: Agregada a tu pedido.
   empty: Tu carrito está vacío.
-  emptyHint: Elige una portada y un formato para empezar.
-  emptyCta: Elegir mi portada
+  emptyHint: Agrega tu Agenda Renacer para empezar.
+  emptyCta: Quiero mi Agenda Renacer
   decrease: Una menos
   increase: Una más
   remove: Quitar
@@ -261,13 +202,13 @@ cart:
   max: Máximo {max} agendas por pedido
   viewCart: Ver carrito
   messageIntro: "Hola, quiero hacer este pedido:"
-  messageLine: "• {qty} × {edition} · {format}"
+  messageLine: "• {qty} × {edition}"
   messageTotal: "Total: {total} ({count} {unit})"
 
 ui:
   fromPrice: Desde {price} por agenda
   savings: Ahorras {amount}
-  stickyCta: Elegir mi portada
+  stickyCta: Quiero mi Agenda Renacer
   faqEyebrow: DUDAS
   faqTitle: Lo que nos preguntan
   faqSub: Si no está aquí, escríbenos. Contestamos nosotras, no un robot.
@@ -279,11 +220,11 @@ ui:
   nudge: Agrega {n} más y cada una te sale en {price}
   nudgeSave: Ahorras {amount} en total
   nudgeBest: Ya tienes el mejor precio por agenda
-  heroPick: Elige tu color
+  heroPick: Tu agenda
   chosen: Elegida
   pickOne: Elegir la {label}
 
 footer:
   links: [Términos y condiciones, Privacidad, Promociones]
-  legal: Áurea Papelería S.A.C. · RUC 20123456789
-  address: Av. Ejemplo 123, Miraflores, Lima
+  legal: Razón social pendiente · RUC pendiente
+  address: Dirección pendiente
