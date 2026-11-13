@@ -324,8 +324,7 @@
         "eyebrow",
         "title",
         "image",
-        "materials",
-        "size"
+        "materials"
       ],
       "properties": {
         "eyebrow": {
@@ -662,9 +661,7 @@
     "footer": {
       "type": "object",
       "required": [
-        "links",
-        "legal",
-        "address"
+        "links"
       ],
       "properties": {
         "links": {
