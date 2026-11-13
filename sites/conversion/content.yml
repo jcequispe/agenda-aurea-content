@@ -92,7 +92,7 @@ details:
     - { label: Anillado doble dorado,     detail: abre completamente plana }
     - { label: Esquineros metálicos,      detail: para que no se gasten las puntas }
     - { label: Cierre con liga elástica,  detail: para que no se abra sola en la mochila }
-  size: Tamaño pendiente de confirmar # PENDIENTE: medidas y peso reales
+# size: PENDIENTE — agregar medidas y peso reales cuando se confirmen (se oculta mientras no exista)
 
 proof:                           # PENDIENTE: sin reseñas reales todavía — no se muestra
   verified: false
@@ -136,9 +136,9 @@ pricing:                         # precio real: 1 agenda = USD 42. Tramos 2/3 ca
   payNote: Pagas con Yape o tarjeta.
 
 unboxing:
-  title: Para leer con calma, donde sea.
-  body: Un libro para llevar contigo — al café, a la terraza, a ver el atardecer.
-  image: renacer/lifestyle/friends-cafe.jpg
+  title: Para escribir con calma, donde sea.
+  body: Tu Agenda Renacer para llevar contigo — al café, a la terraza, a ver el atardecer.
+  image: renacer/lifestyle/sunset-sea.jpg
 
 guarantee:                       # PENDIENTE: confirmar la política antes de publicar
   title: Cambias de opinión sin problema.
@@ -225,6 +225,6 @@ ui:
   pickOne: Elegir la {label}
 
 footer:
-  links: [Términos y condiciones, Privacidad, Promociones]
-  legal: Razón social pendiente · RUC pendiente
-  address: Dirección pendiente
+  links: [Términos y condiciones, Privacidad, Promociones] # PENDIENTE: aún no son clicables, falta crear esas páginas
+  # legal: PENDIENTE — razón social y RUC reales (se oculta mientras no existan)
+  # address: PENDIENTE — dirección real (se oculta mientras no exista)
