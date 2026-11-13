@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <circle cx="80" cy="80" r="70" fill="none" stroke="#9c7129" stroke-width="2.5"/>
+  <circle cx="80" cy="80" r="61" fill="none" stroke="#9c7129" stroke-width="1"/>
+  <path d="M80 26 C84 32 84 38 80 44 C76 38 76 32 80 26 Z" fill="#9c7129"/>
+  <path d="M68 30 C71 33 71 37 68 40" fill="none" stroke="#9c7129" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M92 30 C89 33 89 37 92 40" fill="none" stroke="#9c7129" stroke-width="1.4" stroke-linecap="round"/>
+  <text x="80" y="104" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="54" fill="#4a3115">ES</text>
+</svg>
