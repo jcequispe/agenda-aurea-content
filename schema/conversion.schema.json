@@ -649,6 +649,9 @@
         "cta": {
           "type": "string",
           "minLength": 1
+        },
+        "image": {
+          "$ref": "#/definitions/media"
         }
       }
     },
