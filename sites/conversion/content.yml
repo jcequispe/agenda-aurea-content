@@ -39,6 +39,12 @@ hero:
     - Envíos a todo el Perú
     - "Edición única: la misma agenda para todas"
 
+trustBar:
+  items:
+    - Atención real por WhatsApp, no un bot
+    - Cambias de opinión sin problema
+    - Edición única 2027, sin letra chica
+
 problem:
   eyebrow: ¿TE SUENA?
   title: La mayoría de agendas solo reciben tareas.

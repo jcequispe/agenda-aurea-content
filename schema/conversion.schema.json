@@ -129,6 +129,18 @@
         }
       }
     },
+    "trustBar": {
+      "type": "object",
+      "properties": {
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
     "problem": {
       "type": "object",
       "required": [
