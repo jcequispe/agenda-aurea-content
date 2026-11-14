@@ -42,7 +42,7 @@ hero:
 problem:
   eyebrow: ¿TE SUENA?
   title: La mayoría de agendas solo reciben tareas.
-  body: Nunca te preguntan cómo estás, qué sientes o hacia dónde quieres ir. Terminan llenas de pendientes y vacías de ti.
+  body: Sabemos lo que es prometerte un año distinto y que la rutina te gane. Las agendas de siempre nunca te preguntan cómo estás, qué sientes o hacia dónde quieres ir. Terminan llenas de pendientes y vacías de ti.
   points:
     - Anotas lo que tienes que hacer, nunca cómo lo estás llevando.
     - No hay espacio para una intención, solo para una casilla.
@@ -179,7 +179,7 @@ faq:
 
 finalCta:
   title: No busques el momento perfecto. Créalo tú.
-  sub: Empieza 2027 con una agenda que te acompaña de verdad.
+  sub: Otro año puede pasar igual que este — o puede ser el que por fin te hiciste caso. Empieza 2027 con una agenda que te acompaña de verdad.
   cta: Quiero mi Agenda Renacer
 
 cart:
