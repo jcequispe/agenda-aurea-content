@@ -79,14 +79,14 @@ formats:
   eyebrow: EDICIÓN
   title: Una sola agenda, para que elegir sea simple.
   body: Sin versiones ni variantes — la misma Agenda Renacer 2027 para todas.
-  image: renacer/lifestyle/desk-writing.jpg
+  image: renacer/lifestyle/desk-writing-2.jpg
   items:
     - { id: unica, name: Edición única, detail: la misma para todas, sin letra chica }
 
 details:
   eyebrow: HECHA PARA DURAR
   title: Cada detalle, a la vista.
-  image: renacer/lifestyle/desk-writing.jpg
+  image: renacer/lifestyle/desk-writing-2.jpg
   materials:
     - { label: Tapa dura texturizada,     detail: resiste el uso diario }
     - { label: Anillado doble dorado,     detail: abre completamente plana }
