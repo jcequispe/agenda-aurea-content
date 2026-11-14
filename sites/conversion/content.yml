@@ -231,6 +231,6 @@ ui:
   pickOne: Elegir la {label}
 
 footer:
-  links: [Términos y condiciones, Privacidad, Promociones] # PENDIENTE: aún no son clicables, falta crear esas páginas
+  links: [] # Sin enlaces hasta tener páginas reales de términos y privacidad (las dudas van en el FAQ)
   # legal: PENDIENTE — razón social y RUC reales (se oculta mientras no existan)
   # address: PENDIENTE — dirección real (se oculta mientras no exista)
