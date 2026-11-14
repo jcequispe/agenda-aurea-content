@@ -35,7 +35,7 @@ hero:
   ctaSecondary: Ver cómo es por dentro
   chips: [Tapa dura texturizada, Anillado doble dorado, Esquineros metálicos, Cierre con liga]
   assurances:
-    - Pagas por WhatsApp, no en esta página
+    - Coordinas tu pago por WhatsApp; aquí no se cobra nada
     - Envíos a todo el Perú
     - "Edición única: la misma agenda para todas"
 
@@ -74,7 +74,7 @@ editionsSection:
   sub: Nada que elegir entre diez opciones. Esta es la agenda, lista para acompañarte todo el año.
   cta: Quiero mi Agenda Renacer
   reassure:
-    - Pagas por WhatsApp, no en esta página
+    - Coordinas tu pago por WhatsApp; aquí no se cobra nada
     - Edición única, sin letra chica
     - Envíos a todo el Perú
 
@@ -98,7 +98,7 @@ details:
     - { label: Anillado doble dorado,     detail: abre completamente plana }
     - { label: Esquineros metálicos,      detail: para que no se gasten las puntas }
     - { label: Cierre con liga elástica,  detail: para que no se abra sola en la mochila }
-# size: PENDIENTE — agregar medidas y peso reales cuando se confirmen (se oculta mientras no exista)
+  size: A5 · 15 × 21 cm · 380 g aprox.   # MOCK: confirmar medidas y peso reales
 
 proof:                           # PENDIENTE: sin reseñas reales todavía — no se muestra
   verified: false
@@ -117,10 +117,10 @@ steps:
   items:
     - title: Eliges cuántas
       body: Una para ti, o varias para regalar.
-    - title: Pagas
-      body: Con Yape o tarjeta. Te escribimos por WhatsApp para confirmar.
-    - title: Recibes
-      body: Con seguimiento desde el despacho.
+    - title: Coordinas el pago
+      body: Te escribimos por WhatsApp y pagas con Yape o tarjeta. En esta página no se cobra nada.
+    - title: Recibes  # MOCK: confirmar plazos reales
+      body: "Lima: 1 a 3 días hábiles. Provincias: 3 a 7 días hábiles, con seguimiento desde el despacho."
 
 pricing:                         # precio real: 1 agenda = USD 42. Tramos 2/3 calculados con el mismo % de dcto. del mock (~5% y ~10.5%); ajusta si tienen otro precio.
   currency: "$"
@@ -139,16 +139,16 @@ pricing:                         # precio real: 1 agenda = USD 42. Tramos 2/3 ca
     - { qty: 2, total: 79.58,  perUnit: 39.79, note: Ideal para regalar }
     - { qty: 3, total: 112.74, perUnit: 37.58, note: Mejor precio por agenda }
   mixNote: Para ti, o para regalar.
-  payNote: Pagas con Yape o tarjeta.
+  payNote: Coordinas el pago por WhatsApp (Yape o tarjeta).
 
 unboxing:
   title: Para escribir con calma, donde sea.
   body: Tu Agenda Renacer para llevar contigo — al café, a la terraza, a ver el atardecer.
   image: renacer/lifestyle/sunset-sea.jpg
 
-guarantee:                       # PENDIENTE: confirmar la política antes de publicar
+guarantee:                       # MOCK: confirmar la política antes de publicar
   title: Cambias de opinión sin problema.
-  body: Escríbenos antes de que despachemos tu pedido y lo ajustamos.
+  body: Escríbenos antes de que despachemos tu pedido y lo ajustamos. Si llega con algún defecto, la cambiamos sin costo dentro de los 7 días de recibirla.
 
 demo:
   eyebrow: PRUÉBALA ANTES DE COMPRARLA
@@ -174,8 +174,15 @@ demo:
   reset: Empezar de nuevo
 
 faq:
+  # MOCK (plazos y costos de envío): confirmar con el negocio antes de publicar
   - q: ¿Cuándo llega?
-    a: Te escribimos por WhatsApp apenas despachemos tu pedido, con el seguimiento.
+    a: "En Lima, entre 1 y 3 días hábiles; en provincias, entre 3 y 7 días hábiles desde el despacho. Te escribimos por WhatsApp con el seguimiento."
+  - q: ¿Cuánto cuesta el envío?
+    a: "En Lima, S/ 10; en provincias, desde S/ 15 según el destino. Te confirmamos el costo exacto por WhatsApp antes de que pagues."
+  - q: ¿Cómo pago?
+    a: "Te escribimos por WhatsApp y pagas con Yape o tarjeta. En esta página no se cobra nada."
+  - q: ¿Y si llega con algún defecto?
+    a: Escríbenos dentro de los 7 días de recibirla, con una foto, y te la cambiamos sin costo.
   - q: ¿Qué contiene la agenda?
     a: Ejercicios guiados de transformación emocional, intenciones diarias, hábitos y tu semana completa, mes a mes.
   - q: ¿Cómo coordinan la entrega?
@@ -232,5 +239,5 @@ ui:
 
 footer:
   links: [] # Sin enlaces hasta tener páginas reales de términos y privacidad (las dudas van en el FAQ)
-  # legal: PENDIENTE — razón social y RUC reales (se oculta mientras no existan)
-  # address: PENDIENTE — dirección real (se oculta mientras no exista)
+  # legal: PENDIENTE — razón social y RUC reales. NO inventar: se oculta mientras no existan
+  address: Lima, Perú   # MOCK: reemplazar por la dirección real si se quiere mostrar
