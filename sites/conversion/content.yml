@@ -118,7 +118,7 @@ steps:
     - title: Eliges cuántas
       body: Una para ti, o varias para regalar.
     - title: Coordinas el pago
-      body: Te escribimos por WhatsApp y pagas con Yape o tarjeta. En esta página no se cobra nada.
+      body: Nos escribes por WhatsApp y coordinamos el pago con Yape o tarjeta. En esta página no se cobra nada.
     - title: Recibes
       body: Coordinamos contigo por WhatsApp la entrega, con seguimiento desde el despacho.
 
@@ -179,7 +179,7 @@ faq:
   - q: ¿Cuánto cuesta el envío?
     a: Te confirmamos el costo por WhatsApp según tu destino, antes de que pagues.
   - q: ¿Cómo pago?
-    a: "Te escribimos por WhatsApp y pagas con Yape o tarjeta. En esta página no se cobra nada."
+    a: Nos escribes por WhatsApp y coordinamos el pago con Yape o tarjeta. En esta página no se cobra nada.
   # MOCK (7 días): confirmar la política junto con la garantía
   - q: ¿Y si llega con algún defecto?
     a: Escríbenos dentro de los 7 días de recibirla, con una foto, y te la cambiamos sin costo.
@@ -209,12 +209,14 @@ cart:
   savings: Ahorras {amount} por llevar varias
   checkout: Pedir por WhatsApp
   keepShopping: Seguir eligiendo
-  note: Te escribimos por WhatsApp para confirmar dirección y pago. En esta página no se cobra nada.
+  note: Envías tu pedido por WhatsApp y te respondemos para confirmar dirección y pago. En esta página no se cobra nada.
   max: Máximo {max} agendas por pedido
   viewCart: Ver carrito
-  messageIntro: "Hola, quiero hacer este pedido:"
-  messageLine: "• {qty} × {edition}"
+  lineDetail: Anillada · Tapa dura
+  messageIntro: "Hola, quiero hacer este pedido de la Agenda Renacer 2027:"
+  messageLine: "• {qty} × Agenda {edition}"
   messageTotal: "Total: {total} ({count} {unit})"
+  messageOutro: "Mis datos para coordinar la entrega:\nNombre:\nDistrito o ciudad:"
 
 ui:
   fromPrice: Desde {price} por agenda
