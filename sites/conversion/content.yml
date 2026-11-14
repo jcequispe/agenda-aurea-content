@@ -119,8 +119,8 @@ steps:
       body: Una para ti, o varias para regalar.
     - title: Coordinas el pago
       body: Te escribimos por WhatsApp y pagas con Yape o tarjeta. En esta página no se cobra nada.
-    - title: Recibes  # MOCK: confirmar plazos reales
-      body: "Lima: 1 a 3 días hábiles. Provincias: 3 a 7 días hábiles, con seguimiento desde el despacho."
+    - title: Recibes
+      body: Coordinamos contigo por WhatsApp la entrega, con seguimiento desde el despacho.
 
 pricing:                         # precio real: 1 agenda = USD 42. Tramos 2/3 calculados con el mismo % de dcto. del mock (~5% y ~10.5%); ajusta si tienen otro precio.
   currency: "$"
@@ -174,19 +174,17 @@ demo:
   reset: Empezar de nuevo
 
 faq:
-  # MOCK (plazos y costos de envío): confirmar con el negocio antes de publicar
   - q: ¿Cuándo llega?
-    a: "En Lima, entre 1 y 3 días hábiles; en provincias, entre 3 y 7 días hábiles desde el despacho. Te escribimos por WhatsApp con el seguimiento."
+    a: Coordinamos la fecha contigo por WhatsApp, en Lima y a todo el Perú. Apenas despachemos tu pedido te escribimos con el seguimiento.
   - q: ¿Cuánto cuesta el envío?
-    a: "En Lima, S/ 10; en provincias, desde S/ 15 según el destino. Te confirmamos el costo exacto por WhatsApp antes de que pagues."
+    a: Te confirmamos el costo por WhatsApp según tu destino, antes de que pagues.
   - q: ¿Cómo pago?
     a: "Te escribimos por WhatsApp y pagas con Yape o tarjeta. En esta página no se cobra nada."
+  # MOCK (7 días): confirmar la política junto con la garantía
   - q: ¿Y si llega con algún defecto?
     a: Escríbenos dentro de los 7 días de recibirla, con una foto, y te la cambiamos sin costo.
   - q: ¿Qué contiene la agenda?
     a: Ejercicios guiados de transformación emocional, intenciones diarias, hábitos y tu semana completa, mes a mes.
-  - q: ¿Cómo coordinan la entrega?
-    a: Te escribimos por WhatsApp para confirmar dirección y la mejor fecha, en Lima y para el resto del país.
   - q: ¿Puedo cambiar mi pedido después de pagar?
     a: Sí, mientras no hayamos empezado tu envío. Escríbenos y lo ajustamos.
 
