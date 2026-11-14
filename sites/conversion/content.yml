@@ -92,7 +92,7 @@ formats:
 details:
   eyebrow: HECHA PARA DURAR
   title: Cada detalle, a la vista.
-  image: renacer/lifestyle/desk-writing-2.jpg
+  image: renacer/lifestyle/desk-writing.jpg
   materials:
     - { label: Tapa dura texturizada,     detail: resiste el uso diario }
     - { label: Anillado doble dorado,     detail: abre completamente plana }
@@ -140,6 +140,12 @@ pricing:                         # precio real: 1 agenda = USD 42. Tramos 2/3 ca
     - { qty: 3, total: 112.74, perUnit: 37.58, note: Mejor precio por agenda }
   mixNote: Para ti, o para regalar.
   payNote: Coordinas el pago por WhatsApp (Yape o tarjeta).
+
+gift:
+  tag: PARA REGALAR
+  title: Una agenda para acompañar a quien quieres.
+  note: Llévate 2 o 3 y regala una Agenda Renacer a quien quieras acompañar en 2027.
+  image: renacer/lifestyle/friends-cafe.jpg
 
 unboxing:
   title: Para escribir con calma, donde sea.
@@ -189,6 +195,7 @@ faq:
     a: Sí, mientras no hayamos empezado tu envío. Escríbenos y lo ajustamos.
 
 finalCta:
+  image: renacer/lifestyle/sunset-sea.jpg
   title: No busques el momento perfecto. Créalo tú.
   sub: Otro año puede pasar igual que este — o puede ser el que por fin te hiciste caso. Empieza 2027 con una agenda que te acompaña de verdad.
   cta: Quiero mi Agenda Renacer
