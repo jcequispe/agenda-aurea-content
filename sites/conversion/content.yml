@@ -85,14 +85,14 @@ formats:
   eyebrow: EDICIÓN
   title: Una sola agenda, para que elegir sea simple.
   body: Sin versiones ni variantes — la misma Agenda Renacer 2027 para todas.
-  image: renacer/lifestyle/detalle-frente-reverso.jpg
+  image: renacer/lifestyle/detalle-portada-contraportada.jpg
   items:
     - { id: unica, name: Edición única, detail: la misma para todas, sin letra chica }
 
 details:
   eyebrow: HECHA PARA DURAR
   title: Cada detalle, a la vista.
-  image: renacer/lifestyle/detalle-frente-reverso.jpg
+  image: renacer/lifestyle/detalle-portada-contraportada.jpg
   materials:
     - { label: Tapa gruesa resistente,     detail: aguanta el uso diario en la mochila }
     - { label: Interior a todo color,      detail: cada mes con su propio color e íconos }
