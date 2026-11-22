@@ -150,7 +150,7 @@ gift:
 unboxing:
   title: Para escribir con calma, donde sea.
   body: Tu Agenda Renacer para llevar contigo — al café, a la terraza, a ver el atardecer.
-  image: renacer/lifestyle/sunset-sea.jpg
+  image: renacer/lifestyle/cierre-real.jpg
 
 guarantee:                       # MOCK: confirmar la política antes de publicar
   title: Cambias de opinión sin problema.
@@ -194,7 +194,7 @@ faq:
     a: Sí, mientras no hayamos empezado tu envío. Escríbenos y lo ajustamos.
 
 finalCta:
-  image: renacer/lifestyle/sunset-sea.jpg
+  image: renacer/lifestyle/cierre-real.jpg
   title: No busques el momento perfecto. Créalo tú.
   sub: Otro año puede pasar igual que este — o puede ser el que por fin te hiciste caso. Empieza 2027 con una agenda que te acompaña de verdad.
   cta: Quiero mi Agenda Renacer
