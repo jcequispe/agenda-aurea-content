@@ -226,7 +226,7 @@ cart:
   messageOutro: "Mis datos para coordinar la entrega:\nNombre:\nDistrito o ciudad:"
 
 ui:
-  fromPrice: Desde {price} por agenda
+  fromPrice: "{price} por agenda"
   savings: Ahorras {amount}
   stickyCta: Quiero mi Agenda Renacer
   faqEyebrow: DUDAS
