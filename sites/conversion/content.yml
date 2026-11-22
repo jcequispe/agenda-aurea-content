@@ -33,7 +33,7 @@ hero:
   image: renacer/lifestyle/hands-opening.jpg
   ctaPrimary: Quiero mi Agenda Renacer
   ctaSecondary: Ver cómo es por dentro
-  chips: [Tapa dura texturizada, Anillado doble dorado, Esquineros metálicos, Cierre con liga]
+  chips: [Tapa gruesa resistente, Interior a todo color, Cinta separadora dorada, Edición 2027]
   assurances:
     - Coordinas tu pago por WhatsApp; aquí no se cobra nada
     - Envíos a todo el Perú
@@ -94,11 +94,11 @@ details:
   title: Cada detalle, a la vista.
   image: renacer/lifestyle/desk-writing.jpg
   materials:
-    - { label: Tapa dura texturizada,     detail: resiste el uso diario }
-    - { label: Anillado doble dorado,     detail: abre completamente plana }
-    - { label: Esquineros metálicos,      detail: para que no se gasten las puntas }
-    - { label: Cierre con liga elástica,  detail: para que no se abra sola en la mochila }
-  size: A5 · 15 × 21 cm · 380 g aprox.   # MOCK: confirmar medidas y peso reales
+    - { label: Tapa gruesa resistente,     detail: aguanta el uso diario en la mochila }
+    - { label: Interior a todo color,      detail: cada mes con su propio color e íconos }
+    - { label: Cinta separadora dorada,    detail: para no perder la página }
+    - { label: Lomo cosido con el título,  detail: se identifica fácil en tu repisa }
+  size: A5 · 15 × 21 cm aprox.   # MOCK: confirmar medidas y peso reales — se quitó "anillado"/liga/esquineros: el producto real no los tiene (confirmado por video del cliente)
 
 proof:                           # PENDIENTE: sin reseñas reales todavía — no se muestra
   verified: false
@@ -122,8 +122,8 @@ steps:
     - title: Recibes
       body: Coordinamos contigo por WhatsApp la entrega, con seguimiento desde el despacho.
 
-pricing:                         # precio real: 1 agenda = USD 42. Tramos 2/3 calculados con el mismo % de dcto. del mock (~5% y ~10.5%); ajusta si tienen otro precio.
-  currency: "$"
+pricing:                         # precio real confirmado por el cliente: 1 agenda = S/ 140. Tramos 2/3: propuesta de Claude (ver chat) — el cliente propuso S/260 por 2, aquí confirmado; S/375 por 3 es sugerencia, ajustar si el cliente decide otro número.
+  currency: "S/"
   eyebrow: TU PEDIDO
   title: ¿Cuántas te llevas?
   maxQty: 12
@@ -135,9 +135,9 @@ pricing:                         # precio real: 1 agenda = USD 42. Tramos 2/3 ca
   perUnitLabel: Cada una te sale en
   buyLabel: Pedir por WhatsApp
   tiers:
-    - { qty: 1, total: 42,     note: Para empezar }
-    - { qty: 2, total: 79.58,  perUnit: 39.79, note: Ideal para regalar }
-    - { qty: 3, total: 112.74, perUnit: 37.58, note: Mejor precio por agenda }
+    - { qty: 1, total: 140, note: Para empezar }
+    - { qty: 2, total: 260, perUnit: 130, note: Ideal para regalar }
+    - { qty: 3, total: 375, perUnit: 125, note: Mejor precio por agenda }
   mixNote: Para ti, o para regalar.
   payNote: Coordinas el pago por WhatsApp (Yape o tarjeta).
 
@@ -219,7 +219,7 @@ cart:
   note: Envías tu pedido por WhatsApp y te respondemos para confirmar dirección y pago. En esta página no se cobra nada.
   max: Máximo {max} agendas por pedido
   viewCart: Ver carrito
-  lineDetail: Anillada · Tapa dura
+  lineDetail: Tapa gruesa · Interior a color
   messageIntro: "Hola, quiero hacer este pedido de la Agenda Renacer 2027:"
   messageLine: "• {qty} × Agenda {edition}"
   messageTotal: "Total: {total} ({count} {unit})"
