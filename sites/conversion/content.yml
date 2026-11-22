@@ -214,7 +214,7 @@ cart:
   total: Total
   savings: Ahorras {amount} por llevar varias
   checkout: Pedir por WhatsApp
-  keepShopping: Seguir eligiendo
+  keepShopping: Volver a la página
   note: Envías tu pedido por WhatsApp y te respondemos para confirmar dirección y pago. En esta página no se cobra nada.
   max: Máximo {max} agendas por pedido
   viewCart: Ver carrito
