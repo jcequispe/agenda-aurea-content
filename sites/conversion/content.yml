@@ -79,7 +79,7 @@ editionsSection:
     - Envíos a todo el Perú
 
 editions:
-  - { id: renacer, label: Renacer 2027, color: "#9c7129", image: renacer/cover/cover-plain-2.jpg }
+  - { id: renacer, label: Renacer 2027, color: "#9c7129", image: renacer/cover/cover-real.jpg }
 
 formats:
   eyebrow: EDICIÓN
