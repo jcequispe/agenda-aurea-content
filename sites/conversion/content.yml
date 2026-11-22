@@ -21,7 +21,7 @@ topBanner: Envíos a todo el Perú
 nav:
   links:
     - { label: El método,  href: "#metodo" }
-    - { label: Por dentro, href: "#detalles" }
+    - { label: Por dentro, href: "#por-dentro" }
     - { label: Precios,    href: "#pedido" }
     - { label: Preguntas,  href: "#preguntas" }
 
