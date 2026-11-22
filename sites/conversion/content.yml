@@ -60,7 +60,7 @@ benefits:
   items:
     - title: De tu Estado A a tu Estado B
       body: Ejercicios guiados para ver, en una sola página, dónde estás hoy y hacia dónde quieres ir.
-      image: renacer/interior/transform-states-2.jpg
+      image: renacer/interior/estado-real.jpg
     - title: Una intención antes de empezar
       body: Cada día abre con una pregunta, no con una casilla vacía — tu objetivo, un acto de amor propio, tus prioridades.
       image: renacer/interior/day-intention-2.jpg
@@ -92,7 +92,7 @@ formats:
 details:
   eyebrow: HECHA PARA DURAR
   title: Cada detalle, a la vista.
-  image: renacer/lifestyle/desk-writing-3.jpg
+  image: renacer/lifestyle/detalle-real.jpg
   materials:
     - { label: Tapa gruesa resistente,     detail: aguanta el uso diario en la mochila }
     - { label: Interior a todo color,      detail: cada mes con su propio color e íconos }
@@ -145,7 +145,7 @@ gift:
   tag: PARA REGALAR
   title: Una agenda para acompañar a quien quieres.
   note: Llévate 2 o 3 y regala una Agenda Renacer a quien quieras acompañar en 2027.
-  image: renacer/lifestyle/friends-cafe-2.jpg
+  image: renacer/lifestyle/regalo-real.jpg
 
 unboxing:
   title: Para escribir con calma, donde sea.
