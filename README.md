@@ -1,52 +1,52 @@
 # agenda-aurea-content
 
-Fuente única de contenido (textos, precios, WhatsApp, imágenes, videos) de las landings. Las apps no llevan contenido propio: descargan `content.yml` en runtime y arman la página.
+Fuente única de contenido (textos, precios, WhatsApp, fotos) de la landing de **Agenda Renacer 2027 (E·Sencia)**.
+La app (`rumbo`, `apps/conversion`) no lleva contenido propio: descarga `content.yml` al abrir la página y arma todo con él.
 
 ## Estructura
 
 ```
-sites/<sitio>/content.yml      la "receta" de cada landing (hoy: imperfecta)
-schema/content.schema.json     contrato que valida el YAML (CI + editor)
-media/
-  <sitio>/
-    hero/        imagen principal
-    editions/    una portada por edición/color
-    features/    fotos de las funcionalidades
-    collage/     collage / ambiente
-    product/     formato, tamaño, regalo, unboxing
-    video/
-      clips/     .mp4 (H.264) + .webm opcional
-      posters/   .jpg del primer frame de cada clip
-  shared/
-    logos/ icons/              reutilizables entre sitios
-scripts/validate.mjs           valida YAML + existencia y peso de archivos
+sites/conversion/content.yml     la "receta" de la landing
+schema/conversion.schema.json    contrato que valida el YAML (CI + editor)
+media/renacer/                   fotos y video: brand/ cover/ interior/ lifestyle/ video/
+scripts/validate.mjs             valida YAML + existencia y peso de los archivos
 ```
 
-Las rutas dentro del YAML son relativas a `media/` (ej. `imperfecta/hero/hero.jpg`).
+Las rutas dentro del YAML son relativas a `media/` (ej. `renacer/cover/cover-real.jpg`).
 
-## Cómo lo consume la app (runtime)
+## Cómo lo consume la app
 
-Al hacer push a `master`, GitHub Pages publica `sites/`, `media/` y `schema/`:
+GitHub Pages publica `sites/`, `media/` y `schema/`:
 
 ```
-{BASE}/sites/imperfecta/content.yml
-{BASE}/media/imperfecta/hero/hero.jpg
+https://jcequispe.github.io/agenda-aurea-content/sites/conversion/content.yml
+https://jcequispe.github.io/agenda-aurea-content/media/renacer/cover/cover-real.jpg
 ```
 
-La app hace `fetch(`${BASE}/sites/imperfecta/content.yml`)`, lo parsea con `js-yaml` y resuelve cada imagen/video con `${BASE}/media/${ruta}`. `BASE` es una variable de la app (`VITE_CONTENT_BASE_URL`). Pages responde con CORS abierto.
+La app hace `fetch` del YAML, lo parsea con `js-yaml` y resuelve cada imagen con `${BASE}/media/${ruta}`.
+Cambiar un texto, precio o foto **no requiere recompilar la app**.
 
 ## Editar contenido
 
-1. Rama desde `develop`, edita `content.yml` y/o sube archivos a `media/`.
-2. `npm ci && npm run validate` (CI corre lo mismo).
-3. Merge a `develop` → `master` (GitFlow). Al desplegar, la web cambia sin redeploy de la app.
+1. Rama desde `develop`; edita `sites/conversion/content.yml` y/o sube archivos a `media/`.
+2. `npm ci && npm run validate` (el CI corre lo mismo).
+3. Merge a `develop` → `master` (GitFlow).
+4. Publicar: el push a `master` despliega; si la web no cambia, lanzarlo a mano con
+   `gh workflow run publish.yml --ref master`.
+5. En el celular puede verse la versión anterior unos minutos por caché: cerrar y reabrir la pestaña.
 
-Reglas de media (las aplica `validate`): imágenes ≤ 600 KB (JPG/WebP, ancho ≤ 1600 px), videos ≤ 15 MB (MP4 H.264, sin audio salvo necesidad), nombres en minúsculas sin espacios ni tildes.
+Reglas de media (las aplica `validate`): imágenes ≤ 600 KB, videos ≤ 15 MB, nombres en minúsculas sin espacios ni tildes.
+**Nota:** usar siempre fotos de la agenda real (tapa dura/blanda, lomo plano, sin anillado); no inventar precios, reseñas ni garantías.
 
 ## Trampas de YAML
 
-- Un valor con `: ` (dos puntos y espacio) debe ir entre comillas: `a: "Es preventa: pagas hoy"`.
-- Números de teléfono van entre comillas (`"51900000000"`) para no perder ceros.
-- Colores con `#` van entre comillas.
+- Un valor con `: ` (dos puntos y espacio) va entre comillas: `a: "Es preventa: pagas hoy"`.
+- Números de teléfono entre comillas (`"51900000000"`) para no perder ceros.
+- Colores con `#` entre comillas.
 - Indenta con 2 espacios, nunca con tabs.
-- Placeholders sin resolver están marcados como `PENDIENTE` o `[xx]`.
+- Los placeholders sin resolver están marcados como `PENDIENTE` o `[xx]`.
+
+## Historial
+
+Antes este repo también servía la landing "imperfecta". Se retiró; sigue en el historial
+(tag `pre-limpieza-landings`).

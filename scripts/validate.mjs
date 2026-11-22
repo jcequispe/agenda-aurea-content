@@ -8,8 +8,8 @@ const ajv = new Ajv({ allErrors: true })
 addFormats(ajv)
 const compiled = new Map()
 function validatorFor(site) {
-  const own = `schema/${site}.schema.json`
-  const path = existsSync(own) ? own : 'schema/content.schema.json'
+  const path = `schema/${site}.schema.json`
+  if (!existsSync(path)) return null
   if (!compiled.has(path)) compiled.set(path, ajv.compile(JSON.parse(readFileSync(path, 'utf8'))))
   return compiled.get(path)
 }
@@ -32,6 +32,7 @@ for (const site of readdirSync('sites')) {
   if (!existsSync(file)) continue
   const data = yaml.load(readFileSync(file, 'utf8'))
   const validate = validatorFor(site)
+  if (!validate) { fail(`${file}: falta schema/${site}.schema.json`); continue }
   if (!validate(data)) {
     for (const e of validate.errors) fail(`${file} ${e.instancePath || '/'} ${e.message}`)
     continue
