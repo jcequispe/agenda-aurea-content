@@ -160,7 +160,6 @@ demo:
   eyebrow: PRUÉBALA ANTES DE COMPRARLA
   title: Así se siente una semana sin culpa.
   sub: "Toca los días. Hecho, descanso o en blanco: la semana siempre cuenta lo que sí hiciste."
-  note: Demostración con datos de ejemplo. En tu agenda escribes lo tuyo.
   weekLabel: Tu semana
   days: [L, M, X, J, V, S, D]
   daysLong: [Lunes, Martes, Miércoles, Jueves, Viernes, Sábado, Domingo]
