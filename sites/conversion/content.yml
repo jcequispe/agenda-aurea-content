@@ -33,7 +33,7 @@ hero:
   image: renacer/lifestyle/hero-real.jpg
   ctaPrimary: Quiero mi Agenda Renacer
   ctaSecondary: Ver cómo es por dentro
-  chips: [Tapa gruesa resistente, Interior a todo color, Cinta separadora dorada, Edición 2027]
+  chips: [Incluye 2 bonos GRATIS, Tapa gruesa resistente, Interior a todo color, Cinta separadora dorada, Edición 2027]
   assurances:
     - Coordinas tu pago por WhatsApp; aquí no se cobra nada
     - Envíos a todo el Perú
@@ -110,6 +110,17 @@ proof:                           # PENDIENTE: sin reseñas reales todavía — n
     - quote: "[pendiente: reseña real de una compradora]"
       name: Pendiente
       tag: Sin reseñas reales todavía
+
+bonus:                           # texto dado por el cliente: no agregar valores, plazos ni formas de entrega que no haya confirmado
+  eyebrow: INCLUYE GRATIS
+  title: Tu agenda de desarrollo personal con PNL viene con 2 bonos.
+  summary: Workbook de trabajo + Curso de Autoestima y Amor Propio
+  tag: GRATIS
+  items:
+    - title: Workbook de trabajo
+      body: Cuaderno de ejercicios prácticos para aplicar las técnicas de PNL.
+    - title: Curso de Autoestima y Amor Propio
+      body: Incluye meditación guiada en PNL.
 
 steps:
   eyebrow: ASÍ DE FÁCIL
