@@ -169,9 +169,9 @@ unboxing:
   body: Tu Agenda Renacer para llevar contigo — al café, a la terraza, a ver el atardecer.
   image: renacer/lifestyle/cierre-real.jpg
 
-guarantee:                       # MOCK: confirmar la política antes de publicar
-  title: Cambias de opinión sin problema.
-  body: Escríbenos antes de que despachemos tu pedido y lo ajustamos. Si llega con algún defecto, la cambiamos sin costo dentro de los 7 días de recibirla.
+guarantee:                       # misma política ya publicada en Para regalar; solo la nombramos y subimos junto al botón de compra
+  title: "Garantía Renacer:"
+  body: cambias de opinión antes de despachar, y si llega con algún defecto la cambiamos sin costo dentro de los 7 días de recibirla.
 
 demo:
   eyebrow: PRUÉBALA ANTES DE COMPRARLA
