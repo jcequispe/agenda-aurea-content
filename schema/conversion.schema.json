@@ -900,9 +900,29 @@
               "body": {
                 "type": "string",
                 "minLength": 1
+              },
+              "kicker": {
+                "type": "string",
+                "minLength": 1
               }
             }
           }
+        },
+        "lead": {
+          "type": "string",
+          "minLength": 1
+        },
+        "mainTitle": {
+          "type": "string",
+          "minLength": 1
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1
+        },
+        "cta": {
+          "type": "string",
+          "minLength": 1
         }
       }
     }
