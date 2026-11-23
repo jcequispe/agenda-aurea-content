@@ -33,7 +33,7 @@ hero:
   image: renacer/lifestyle/hero-real.jpg
   ctaPrimary: Quiero mi Agenda Renacer
   ctaSecondary: Ver cómo es por dentro
-  chips: [Incluye 2 bonos GRATIS, Tapa gruesa resistente, Interior a todo color, Cinta separadora dorada, Edición 2027]
+  chips: [Tapa gruesa resistente, Interior a todo color, Cinta separadora dorada, Edición 2027]
   assurances:
     - Coordinas tu pago por WhatsApp; aquí no se cobra nada
     - Envíos a todo el Perú
@@ -111,16 +111,22 @@ proof:                           # PENDIENTE: sin reseñas reales todavía — n
       name: Pendiente
       tag: Sin reseñas reales todavía
 
-bonus:                           # texto dado por el cliente: no agregar valores, plazos ni formas de entrega que no haya confirmado
+bonus:                           # base dada por el cliente; no agregar valores, plazos ni formas de entrega sin confirmar
   eyebrow: INCLUYE GRATIS
-  title: Tu agenda de desarrollo personal con PNL viene con 2 bonos.
+  title: Tu agenda llega con 2 bonos para que pases de escribir a practicar.
+  lead: Por el mismo precio, recibes la agenda de desarrollo personal con PNL y dos complementos para trabajar tu cambio desde varios lados.
+  mainTitle: Agenda de desarrollo personal con PNL
   summary: Workbook de trabajo + Curso de Autoestima y Amor Propio
   tag: GRATIS
+  note: Sin costo adicional. Ya van incluidos en tu pedido.
+  cta: Quiero mi agenda con los 2 bonos
   items:
-    - title: Workbook de trabajo
-      body: Cuaderno de ejercicios prácticos para aplicar las técnicas de PNL.
-    - title: Curso de Autoestima y Amor Propio
-      body: Incluye meditación guiada en PNL.
+    - kicker: Para practicar
+      title: Workbook de trabajo
+      body: Cuaderno de ejercicios prácticos para aplicar las técnicas de PNL. Llevas lo que aprendes a la acción, paso a paso.
+    - kicker: Para quererte mejor
+      title: Curso de Autoestima y Amor Propio
+      body: Incluye meditación guiada en PNL. Un espacio para fortalecer cómo te hablas y cómo te tratas.
 
 steps:
   eyebrow: ASÍ DE FÁCIL
@@ -207,7 +213,7 @@ faq:
 finalCta:
   image: renacer/lifestyle/cierre-real.jpg
   title: No busques el momento perfecto. Créalo tú.
-  sub: Otro año puede pasar igual que este — o puede ser el que por fin te hiciste caso. Empieza 2027 con una agenda que te acompaña de verdad.
+  sub: Otro año puede pasar igual que este — o puede ser el que por fin te hiciste caso. Empieza 2027 con una agenda que te acompaña de verdad, y con 2 bonos gratis.
   cta: Quiero mi Agenda Renacer
 
 cart:
@@ -233,6 +239,7 @@ cart:
   messageIntro: "Hola, quiero hacer este pedido de la Agenda Renacer 2027:"
   messageLine: "• {qty} × Agenda {edition}"
   messageTotal: "Total: {total} ({count} {unit})"
+  messageBonus: "Incluye mis 2 bonos gratis: Workbook de trabajo y Curso de Autoestima y Amor Propio."
   messageOutro: "Mis datos para coordinar la entrega:\nNombre:\nDistrito o ciudad:"
 
 ui:
