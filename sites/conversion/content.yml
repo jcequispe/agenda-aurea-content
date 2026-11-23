@@ -18,6 +18,10 @@ whatsapp:
 
 topBanner: Envíos a todo el Perú
 
+scarcity:                        # confirmado por el cliente: producción limitada, no se reimprime en el año
+  label: Producción limitada
+  note: "Esta edición 2027 no se reimprime: cuando se agote el lote, no vuelve este año."
+
 nav:
   links:
     - { label: El método,  href: "#metodo" }

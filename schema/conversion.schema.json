@@ -925,6 +925,23 @@
           "minLength": 1
         }
       }
+    },
+    "scarcity": {
+      "type": "object",
+      "required": [
+        "label",
+        "note"
+      ],
+      "properties": {
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
     }
   }
 }
